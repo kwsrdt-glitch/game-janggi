@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>장기 - 친구와 한 판</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#13806a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+<style>
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAQQAA8AAAAABswAAAO6AAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA0EQgKhlSFFwE2AiQDCAsGAAQgBQYHIBckGAYbAAUIHgVuy3MrFYnWuhStnjnhHQRUZ1VPd+IFNJvzkmf+QE8O5tdE/mduIWoh4nkJKo9kelfyVrf65UQ9mVUktIMn/tSXQff1RgYv8FjAki4qja1UDIh06qb+Y2NxQoFGmmA0tq1F6fZNFnjAifwFFGZvwOk2w1h0LlaEkvgdfQoBWGlLSxTmqtXrNkW/DOnbnZxH3w7dyHm26dkF/dOmZxv0b5v+PcnBDICGIpp4dGZjBkCicOJLIAaCMIT2AOGZiCIY1aVdx7bt2P/PhDP69urRs1K+LAwFszzZQgEUg9t2dFxoVYZ3MkYoCsDjge6VPC1mYgJtslYD6iiuaElaVgM0hzmUWcEmdaq2gJLpv3hU9vZMBDVRpAABoMVpv4BYzIAGSCAQiVBBEQsVEPX00x7PkPTJRgBo4pZYICUGtRLClRWDqfr2y+VD/sO2TqtPJvm8XnXhBoaBsXI82mokKWN3tnf06tVE8KNl7/R+XQoy+8eNGjtmNRZwRu7Ye0+EHSU/BvaOtoaXY3m7WXpyIud9Y4qvQLDkO9MF5dzpaQPqNcddO5xkK/tp+3rZ/Z9TZXBBYYF1J5KZ43aSBGioOjq56dxF3Z2duHgV6ImnsqFZGUeSJOLSikhgvcONyGtVVBmG7t92uJuUE+Vufzb+fb0jElgI8Oj7kRvde8+AGM+GY6gwnd8Qbvd+vqw7dz0sGi6ybsfA+x0vZeQ+LV5q7sYuxD/FPNudZSs8CQPntTWpDKXpJGoMNIcqm4rcsdT9RbuS/W0B1qqPatmre29vHajkRevGKaVXU1LvqJo8bWOObea0KIepWfrqjWWmEGIp6bMq/m5PtBUkzu+V7p3vmjH033ehTaky1HdVOVL/9LY2ZRDbeEuloeV1tWFPwsR/986zemzztY7TqyOb9B5V2ZEYHp7o5erUv8SdNpQGvlcZcVVM192lKsucPLEk3hzv1DT6cWleQHK8z6GZK+fwptVizSry9rV+D82Gdngt1eOzcXNutgaX8dvYe3jQO+GUkMvPXx9k75KSEuh90a8Z5GX2sczta68cF1c5tt+uQMboV4jzNdlM2wZUTukjg0wtynuHXx97Mfy598WJFXQOi+ZsUhr38FMqhN0eJKqG29IymtpaB3tbLd6WuGomzbIRAAQgGfOp+c/e9Sn4ZpLyJcCdDwt6A7yQcisp/xnyRhYBMxoAAtTE/w9BviSFjGIrAko08dVliGPiQiXMdtGMRNGzlDSmwhfx9b9NvsQl8rDIR1CtCUfoRx4AAAA=) format('woff2');unicode-range:U+8ECA}
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAOMAA8AAAAABagAAAM5AAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA0EQgKhDCDOgE2AiQDCAsGAAQgBQYHIBckGAYbIwQgPgTYxhitH0ntdFSKrOOxGyVs6ngnyjOH4Vk+19N4Pjnx/btL0zTFxUc4Lw4ICjKR8XTJdGA1ak33cp8UmDQj+7KqQwSV8QUZKLfdYFgGgs2QvthMoxuS5mnQuJo9Pd0gIQnVWehGAjl4Mx6fvvWB00AKJONL5+L5+LkoL7N0cjvcrCDIJJUs9YAKXk2D646+HeTy7fJqBVYWSNoCjTUswCzI2kpEzv+/v6nv8zz/QB+7DxZpRGPqss7HBMwTCDyxdb4ssCxyTvWkUVlcQpj2uL1KACsS+Dg4li5eQVBEXkEWMiY9ORMZG5aTDiWE5cRDiWFFOUhwABQYqEITumjDANBgIAxxSKMOgQII5YP9Q4MsmLjElIQyLPpiwhQFudk5dvqGSB5aQ2roFoBRVt2gC32wbOwuqk4wANd7gaEepwF0oOopvsCBTwnGJjag2DiYfEXfcULB4wXwVprHA1NLRAEBKDHKJ7iDAyhAA26gIJAZqAMGSPa8vLtmOgkCYJLjFAACKSPefYE3APJspgtaO2DYK7zbnh2bUlpHlZNKM/1yWT1Z1OPq9mm2dMBqVoq7cNwF836cdCfkvePTP+Pb2wHksK6Fm6FnUXKGmWfHoqwPN7PCuc39ezT28G3auyJYZh4sPnIdo9S9o9M+QLrdZCI0Muc6BytQz537tnUIpYNUfXRFOnuE9XzLD1wmz+DzWQvMtWlZ2puV64X10syP/wy9PMSZLb3WOd2+8bFOvs9k8pQaFAsTzCL2REoaPKyWsZZ0GzExNU6qLle3Ez2AL8yvzVRSgG4tGsZMmcX+nuzJmgCjkOPE+f4+tnJxtqjs/P1TI7miEWZFtlZh6pzMyqInrKpFe/6vgTmE2isZWlXnBZ+UcuoyMh2DaevqXAUNIkUT7HuujH+uffu/WjKvOaI+Q8oodWzrb2SwPQtF0CxHU3PyrEKNY5N91B96LLByaShGVxeefpkoZvPKQFLwnUTSHGQBCKDReJr7WyFcVq/YlAs+9+2pgB+VOguF/6AXmw+wgAUgwNT+PfrCgjJ1kSHSIj8JKgEUVpHRoIoFFIZX1NEPN8jL395czlI06jdszVxGA9E=) format('woff2');unicode-range:U+5352}
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAU0AA8AAAAACGgAAAThAAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA8EQgKiWSHKgE2AiQDCgsIAAQgBQYHIBckGAgbHwZRlE5OmOzrA5vIdA++KowoxLYoY2mu9xLLoNaapd5veoetJYSTvzlxoHiE4Pna73fu3t39mDZvJokhuUQxC108REK0RMKzJ6b/Bh7h+ZDe15t8avDFJH+y9oEq7yoR1ZZXASgBF9VWO2Vne0j8AjD9u7YrGJdreePfdipUtatw1bT2YheeYJOUCPYSW6pt/+L8L0TZlKCkHzxVE+7nYslKWrH77Nt51O6DzScw8ALtPI1lAvOK0N6mWNqQdohPZ7gqkei69xMIIILZmA4z1tr+5vZAHU2JDQcNk7EBYaBhyicyBKizPpE+QJ3ziY8EDVgBYDCTJIvK/g4qmhs/lLUFIQIxhyABzHDM03MCfeE4/m8J54iNiog8Iy5hGOyL1KkBECxdjUJFR4l3vGELwpgBBJHHVhfJXizAbJmJAC15kQygSgYAJhoLgIkAhZa+TgCVE293fJDoXsBuSBogwMFlmx4n60rHPBZeaJIbZ0aHPiUobvkaNZVTRD418EcAlpiFs8DtEAXclmhRyNf1xiIWOz1TW5F28/JWvU19+/Yi7jzzN5qIkJ0rV5haLQfnbqJW3/0sEw6J+Lt39fGuAE3eHMaYBQiBITEbu/ialJ0CeZHzgCbEWt0oMweyeLvGTXFQlS5b2jvNOZfi27kzbqoVjBTRuZskL/LFSzmwePu8JqSnEpHq9kUJ4ppDzXmCiGClOp9/toFl6OZ72aBxGTvKr8sZh/283ufnW5UDB4qEDOO9J6PK0ckcsY+LYTXahCifSomCRIi20RX8Hre9MzEud/eVz9uLmu1D6Wm1o9zMss+dY+7mSoSm5cUPHopz81SXw4jUV/UCwtuXErqdb5se0ot8fYGRHuxlQ5gz17iA1O0TvbeGCX9QyFjEwkuROpPDdh7VWbcwRRH3mLSE9MYyxAT4ruFBI0IN7OVJO/9nutHikVjaahn0h8T/Q1En6dZsSEAuF2uo4nPcs/8+hzY/5nft51O4eV5Ke+o4l/x1BatswXT6OKdyr2C+3ejMkdfY85PVDhpVUhBsS8FibShTJb0e2pmmx3k8d+u9dvfA+nEdrUqNoxGAbVT6lnKnMCoXPqeY0f6pwFqyURt1E7Ki2ngqPJYSS30TWnfnAfUXwaX+Pjx+KKQT1Cla4ZmxN18CT394dhV13pd2zSiN4xHR1OfD7vUWRLu+wV9bWj3TwD4wDrvrrFxQbyf+2iZrrs2TzK0jS0caKo0lq6mPOj2l685nC7Nuu8srZshjB2JRWMbNH849xvY9YCxPtnQ0ghVznXvHJ2d3BSsrfkxU7DqU6zZzpWut5aSiu7/s1P9eP2rkgr6cLVi3LLOTdA9PUBKcO1dgLNPHdve/6N3WUbnqvvf5O7+XoR99lJbabWTLlOJb4KGTPmms8uZvb86ic1RcP8RBF9VTGhJ45l59PVOqy12M6sn0zPJ1nhGoQBKsusYRlmYOjrDhbflJOn1srfqzJ7cic3zH2xedRt/Gc6Z0xzOpxcpnYaqHB3jTKmh0cW4aBVyR5OxG2NSh3Kd/0e6kD3v/JwUAgACUDcOYxcFBKvVfuyJXALy+H4kGgLCaRujbW5+aogCPgiO78f8NFmf0RVKfgiCFkbeB078IKkKYTwqJ95iQDFDFviRAfrr1imZhPKTeBActMfsA8zAe) format('woff2');unicode-range:U+8C61,U+58EB}
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAR4AA8AAAAAB3gAAAQjAAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA0EQgKiACFdgE2AiQDCAsGAAQgBQYHIBckGAYbXwVRlAzONpivCrIhUz6shc3u6jRCIPWm6ZP+YUtd8onnubLxGA/0+307V1bU+6a/zTSKCaJdrFEasTMdpkPlDf+e9tI6nbIFA6yzgw5OTkyP0BeUA5DvDUAdEL8ByuT9NRgi57+fv5n+bGxOKNBIE4zGtG0BRc8akyzwKB4L47MDO0uE7m1iGDY+j3RDEH8/JaDSGTgCWfn84vqG8fO+lw9K1+2X90o3ZU+3xu/Lnk6NP5S9flIiAVHWz5y19UACkqxWI9RcAOkCxRegQiDSTnR7fnXWhq8/mDDGy2ePT8Xk7TFd9MNLOQxCea9VO0e2BEWM+pQvOomgGNB2TpcXMfF7zMUa8yocmQwxxBoJIK4StBa5zXTdHn40tRYCkL8GU0CAOBT/AgySICKhlVAAQWQQyyikt/nFQ0JvAhBoQZnAhMdkNhcOCfdAAOdvMvDzvPXh+/bkKJg7918opzpkR5EoSaL8VUv2rPc8nJ5HUNsIhiE28pYkC1McphzT3fTAhrtktRbA2WBSiarOeXHnVlhp/SHdzSOz/L4/vRXPO0/jNI3SG/HtJ0/azpNw8uCV5TizbRvBTBDzYBJiRkYU80bQZfB9T394I7TpnBW1BaOUKKkEMOBUVtbLIxP48DhOkjDLo/xxfWYFtmIFQU8YBEOIPWq7+aonvXHCTcSJBx40j271uLdJZUVRGKeyGZ7AaRqnhwmGw1QadSAS36KXoqQS8wMUhbJnLYcOqR+wh3EaV44Cai564UEOPUIwIzh79aolu3HevPEghL9vzHAYpyKGp+3n0TjNEJQcXtOde2MRduBSOlX4o7HnPbdcu2THHfNzW8GXj0WGxjdQVrgMkT5e7ZYmjTZHPISSiPFVdYVCVAxnUPu/Zx3JjHxVvjtd4dyY6AVcC4cKz+kwXtba5oKCFpGfb5JayPuIukjvqsp048vHIh7GYNZuJUaeF7LuIxGGXGiZqWlbaOO2zZNnb10FAusM96qzS7othH/+RywOlbz5/1kd/txYOxtZNZwevgKI9srSu0VB62trpjVg6ejfTQoJLJGrC5dtKX0pK+WfgJ4vxNbKNdMTxKhCohgcreq6fcah3jCCT1cVxtzJEJwp7x8ncCxsfZqwvKfOpQWNsWhYsqbbfrF5pVmEThQiQyLTIUkgZqedFzPLrvN3m5dL2eINpxf6fVfzW/E1E1koxxSE4lSfRoQwSWGkj+nHFvQprZ1XWiLhhSnNYaHm9NT06/TpT34pFlK0XsKrql93LTyGaopjW7yLC6bWj7ktcHMXQUgWPvpmvdIrU3PigIDkw8DY2ZASzcB/MsKPAL9mWgF+w3MrdgnJ5AIoF8NA/vr/JQDpjxmXqSYaoiSGH2BAolP03Gq7WC5RLALuYGgE/V3NR5wkDEykU0BRLZhCRBgAAA==) format('woff2');unicode-range:U+695A}
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAPkAA8AAAAABpAAAAOPAAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA0EQgKhhiEZwE2AiQDCAsGAAQgBQYHIBckGAYb0ARRVFCCIH4kxo6RzBo3PryszHXdThCQf2+zbzeAcJY6AFWSq8iK+oM3N2zDrf+AAnkgx6M0jyj/1AcL9BxtcwtptGlo4al8PQEm9rIkqgmZuqkfroEBT9BIEwr/onTZ5u2bLPCAJkjYRWmWJYDpNsUy8IlFqLnj7lUIwJDetKPQz80vrcW/z6TRQ0kcMLrfEBIH9ho+CP8hvYb3wn9or7HDSUQfAA2FO974sxp9ACQKUyyxZSYCJ4T2FKFbiMIeNahP/94yHPvFhDFGjxg2nE47GHEEqyzZcAXgTEwb408gGo1p3vSDIwpApwP7St4VK9EDbbHWCJSMT6KdaFEAmok+oA2pUpLbAJmbjtqlcqRuIaiFwhMQAJqX9gvwRB/QAAnYIhHKKjwRBYS/6ahOt1T9CwQAFGEPQQMXFD8UKhJBAIBZDBOajkNYJodbeDq1CE8IYHlRtfbIcOHeszNXz3y7WXnsUQBgBzITRwS5yle7UhLlauoI1VPT96rp/0th36OaYzwji4g56+YfabaQEc/uBSgPzSMHs2cGgpRYLvjZS1xGsS9YkXnEIXgceWgaIfBZIQBa3kr3vGcWN2A40/c45CjkV7+3rjYkdX0ErFO98NkWHEJyoZk6oCj4HbtIoxxHlKiph+DGnMmDyvz8aTqupnuJagz/g2Y/FYMShWD+n44rYxdSdgVeTP26xqjarMopb/6hvBkfn59Kn+cy99fRh/n3J+Rvisp2efFe32dj3UIt8HmCDLS1cVCmxWEtk6ZVqD3mdUZZ+6r0jey9wzZaDDQokOUUm5rY9FeJPvHlhaNWR0WN0os0MvTcM8Huy+z2cZ+uHbtl3SvWOTKPE7ZFvlMv1ksDaRe1KWbwupVtetlVju6a9nSgQ1uh+chIQ+VTYOzT185U31jv8squzphX2xJOl2SHPzP+Om692xHTqRUVaQX9vR565Nr8cWqJXb3H7fnEopJVY7xffDab4aQZ65sb7lybc2XPR5lgnFiTqRc+xhgHPTPDTH+p4rPsPQwMLPWzi2T7vWVdVaOsC3v9yY70TrApfNu4st4s0Kn1+8oU05V2qa6dXQZO2fk/NlQBgAAkc3pMOiI6LFK/GUr5DuDhhw0jAd5KeZxC3XZ5VloA+mgACFAL/z8D+Y5CwjeK4AExgCa+miLgGWP4uBaCPhJd3VaiqQpLxNf/pvKdTaIX9rIHaKFI2lb0AgAA) format('woff2');unicode-range:U+99AC}
+@font-face{font-family:'JGCho';font-weight:400;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAOQAA8AAAAABcQAAAM6AAMAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHCoGYAA0EQgKhEyDTwE2AiQDCAsGAAQgBQYHIBckGAYbOARRlAzKKoofBzkZr2mlEKW11iLEhZ9ieh6Ycy3zJ4PyqmqsnGR0tH8SgqVwEiDo92v7NJ06pD8d8aimjZCJMF0s0ymFeg1vtu7sO90ucD7g+ZZnccIltUXp2wJM+99b+sfn8wENBzrSkVw0TftgnX6TBZ4FHlgghVkGnG4zBkZ9ewZKDPE7ehUIAEusYBgN81HVjZ04E3vri5TMrE8tUDI7tjyHszC2PIazOLa5TAnmAAAKjia0oA2XsAAABg5bOCJwAAEDhL4g/p9AQ4KvnJgeX+vNLxO2WF9ZWh60dyB6uJhZjwAodlSt0YZ20KHk6Q0xrwPg/3/wBDh7FhcwAD0lewET5RNZQp4YC9TGQmmJPiZW9sCwDhOXqtX/E8BPiFwAAgC0ufwJoBnmACgABkCAgUDnaAbAgeBM8/9/G5E/IAAQSIHWADoQ4NBuIeAugOAJNMcc3COHCplXrsxq164NcI82egSYDvro1HBJCxGVIDGopKStoog+15smXml1SlSE5PQucrKkaTotwmbHmDQPozSe1nT3KEx0cxVkWbh+fW5yn6SrrZUwgxwoBHrqPa/oIzNbJeYbQwquX29SeGXUKWx1SpVUVZAjI4WDITotxOZd75h2tb0cKrj66lXNenmKgVeutHLz1B9vyH8Dro/tms0NaRviYdLcJXdvnRJmCMrK2qbKsjjAceICf+fha9P7LUag/wabFU36X27nv6KTg196roZmzph1Wtspn3Xr7TPyw8g4ak6bpumvTAh3v/ivVeYF71Fnx+zR1qr0Ye9rz8Xd+OW0+MKHvk8zdN3eeAXGOM/gl2wTsaoYbTXc+fyNn91XO21t9HZAd8u6SrltaN6tU+np8Ay+cP74vrqUu3byMW36zbDHcVaGGRtuLtj/BZi4abLzJi1wYMinhm46vpgryaMtR/M4ygFjm4mtNtoc4sEr93s9D64728RdftlcVvTuIspoMn1vDgkAAAgAhsM+b2Vrqbfi25KpLAC3X7UNAHiu2CNH/9eZn4oCmIMCAAjAT/w9APaCI2rUBQJESr7w0hUAKAr9QShzMDj/e5JHnzhCvvyzZdnYRR8t6hyGA6kLP/MBAAAA) format('woff2');unicode-range:U+5305}
+@font-face{font-family:'JGHan';font-weight:700;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAOIAA8AAAAABeAAAAMyAAUAxQAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHEIGYAA0EQgKhFCDfwE2AiQDBgsGAAQgBQYHIBckGAYbfgRgjsK25VOBk6f5qpoQ8fC2bO/vDL2oVo1oXfjaLfJwGxRBeoKwLR7iD8v+/Hu+57a+KZg8wF66OR0k/K0TN9Pm1oDCLrBIIylM1zgvCzDfYF2a4FiAXUJ/b2+Ar3ODAzobRXXfQ/ajBJodQwlwNK7HJGWBzUl/RxP4XXRUN4LfZXlLPdjclLeUg81teVcL+GkEhWzEhBmvwANJ1q5bvxqgaiOglAKomggcg/JVZU2FVbs+mDBGR2tzi5j+AjBMmrDObgC0x2mrRcsisBvsBrvBbpKbPKh0ejunC6zDwKV4ZuUB2MO82AePcALnm5VtJobHg9mDRb3KbtOVALlEZkBA/BUvAYxpRIGEfklAmY0hA5E9WOh0Q/XyDBBYcelj6OdkNOEDQB0HfUlTo9BQXqB2aQTiSWNI4Pkr9AjtNlRGL16sWnz7tt3s+ZjZeHAjee1e5LxF1DxCOydnzmzMkGfvxuQustUeOHJkQzu9HjN37zpsPOpw+3bW6tuYQZp51Lx11KXUe7kYEfMWUXETMbcxkkLt8GmM6fkqYtEmQnsA2DaefcQ1xQUnblyxXnSoFntozKy1WXtxLzlv2zZqEaEXb2ml91Oe2bweM3ORZhmFs7NyMCJycrOJ3DV7rOesUc+ZA/TmzSpCcyz/AZxQtOca+xH3Swi+kTflqXyzkOie7UCTyYYJYp9fQuHroIc1rnkNfZP/Tc0V8ON5FbyFAo4ZLhHXuFWPTheSHbGt1+5RFyi7Cut83weZhTznmKl56cq1sSJDoYBbabaqetas8OIAz6oXTj9TH0yvOt6SimXupeD+Li92cbxilyJzkY4iH1MqkUp5UXHStDT1GfWVJDGl94+6t3ZDQmmRDMuUeC8jlfA+1E4YrdsZH541+EaEDfzEPmuSSL5qU8GcLxL+XD7hLa1FEW1cdtwkhwnctg4Op7tFpKl8W6nxaA/35PKpuLh8kkWqQwAEGrxFWG3yLJUG/REQ7PcAfH94SwPww2bvAaNqLfsOOwmQRgUIcvn/OUi/YKQv3QGkzXiyUdzUBgofwK8NkBslhtVi8JCPboj6f/v6eXoPVkbSRQAh6HBhCgAAAA==) format('woff2');unicode-range:U+6F22}
+@font-face{font-family:'JGHan';font-weight:700;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAO4AA8AAAAABiAAAANjAAUAxQAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHEIGYAA8EQgKhQiEJQE2AiQDCAsIAAQgBQYHIBckGAgbsARRlA7KGIgfi7GNKPYjpAH9GwUBsmkXAqwLE7cXEe3vxdQagHE9cqr20PlaLFaspBWpHbBzvli93QFbpgNaRucLD2g6pZHwzF1uW0pRyxhbHk8fhQBsNKUhOmbxkuWrE9esT9f25G7VtUU7crdu0rENce2adGxCXPsm3TuSGxMADZ0woohjMiYAEh0XPPBhMMKxGiErIhyj0fFDb9OsZdMy7v7FhE107dShYzrxJCAAIUo7bgJg9N5WFKRwGjgDzoAz4Aw2A33N4UCv6/KUthcDtLFabaAc7SYaklWkAMrGuyhZrkgZImq/GddEdnaMBn20iAAEgPimPQYiMAENkIAPEgFGJwE0TYEWJHY4APEKv26LxgAQCKejgB0wp/YFCPUI5cJLRoRuKztPiO43eKdy0awhByz7PpaFm3CVLhxamuuc7d/QSihqrdybYM3ZEFxjyGyhsOwLag1eu/OoUtOmsXSpz65r17h6UY09vd9v+moxxLIv8122zbKvWbBAXL16VY2dLobM8F9xJv5GtWnLfOdfT5q61GfaqlWr8Jm68+ROn63noD35yavFl27tshz0n7HC/0whJaaePCnqGj3if6VWjakrfew3LDvmvpVnE1wb7FRjc15HkvVMudj62KWq/kPIPu/atTxz1lj2VfnFx8hBEWXmnI2oHRFaLdSIkAFBp7LmmdM8Z/NsA7KZIeXDgydx6ka72e1Kvai6o+mJzbkmn1yiNLW4XY+wP719kzI3T4lak+WvIQfMzXK2YL2IttkzAms8z+2b+ORdlKeuOxkzm0Q39/ZssLqsS9ksYwtODamnj9CNKxk/vt4tH5lZe/f0ctNy+lc7c+LMjagh14tqerbRfdS2Y+m1Qut4xeuXTKN7RpvPdQuH9a2mte6StMe7hJflbJvy4tfz08Oq/Nsz+EWtJp5Opii6qnvUmbb2mPKZuebWXlt6IqWloS70HNF5Y9DQSt6xnvHpRUJaNq7Y6/2qbrk7NTv+u7XNliGkGF1NjTqVu2nJ2kkZRz39BwKAAAyOfRznW66Re/5vNku+BLjz6vlggBdSbiPasVhek3URmGgACNBH/38I8iXReMtrCEgVToEoTUWieckJjEkBOBOJpGMuWekLD8TX/y7t6/IlfgTJ84BIWhrUxg8AAA==) format('woff2');unicode-range:U+8C61,U+58EB}
+@font-face{font-family:'JGHan';font-weight:700;font-display:block;src:url(data:font/woff2;base64,d09GMgABAAAAAAV4AA8AAAAACLQAAAUlAAUAxQAAAAAAAAAAAAAAAAAAAAAAAAAAGYFSHEIGYABMEQgKigCIIgE2AiQDDAsMAAQgBQYHIBckGAwbxQYgjsN0eyOnTPJFOZJx4+H7/dq5XyytAZUWxNJGXEqh4dVjIWSmQ/T8fv7d9M8FT4BCCZRiNZlREaev6nRiEjaHzamJzD2F5/plOnE23ffRhsNfeKQTet7ej8q+h6J43gvWZV1ANezzAY8DCWjknG1LOoMKNjjMXDn3+O0rBNDQQSkwsGbitdngundg52YIPNq5ZhMEHlds3QCuZxVbK8D1vGL3VgjEAsgwqDlydXURzOPxCBFIQKkfyt8BlM5ikGKcVK7VlfDuX0w4xc5tW7aG0/YEZCTH4MEUANr+8064yDCwBtbAGljDajCOUgK+LvLHtEVgguyalg9gGdfFJnjHcmC4MROaS4lKAvvxnrpB+vb/L0FxiewBBCD+aZ8DmMYCMiAHRugQ0mMIBDocNLTxnizmxSd1g///D8zS8L2+tCNgbS4gbAXkrEInQglY74N4A8gmk/KmAQdzqGCINQwmYislxIksG7n/unUIgzyEQSUG+MMAbuwDshfDAL+5iyrIWYwHWPAQH2F0HH0c8Jeb/up1qBF85CuKwoB/sWyd5qhWPjnIGETvM2eTCTNUI32NzYTFqeuxS1UO2Soz1cptaXW9tN4s73mIG+ugMSTRGTare0tS1wSjC/XS/juepaomruSRFKVspJ651E9eeFZXI32rSzKluwOKBgsiFQJ6132crx/BjXOvOMIAfxkwsV6k7926HLzD4pRPmohFKnGSupctlryqubm+zJ8bzObg6v5+pB9YWLDpW1ry+DoPi8hFTIjwwq4pl6ou3Niz6XNOFZCdROekM0Vl51Qi/UL8Vitl38Cbc4fIQWKWonVuCvNmpLcg3NjQghAPmWZnZ+X+Uk7tqDuforJrqdFnG7KeOZKSrr8RRloUHRbE673lzgfyFoVhQN5+vIQbLXnV9Ug/0IMbr4+KdXodeaFcX36m7GK5MqJdaLXfSnhamKSLdxU7yszqBUX50IGhM95nCv5K/Ssryyfr9IHTv2DJSsVOpeM3qhVZormwFZk2pbB8RW5/2F61D64nbbi84dLV4svFl86su7zOtRPznhndn+f+IvM+m7GawUwQ/7Z874cPxuZ3mlbIfW15l0TcAf8Sg3ZEFnnDVCAXROMnQnCZnKsTsAzOjvaJv/iGEDyVC8/gzNXxWK+clxepnHARHkKkJ2jMb9z56yVrp7pcIqeXq5t5LqJcOpPF/LOC4yx/1XNCEIknsmPYUZ/dmlQ1yr9V2B6Tq87JX6877ThCELYS6Z+SueLTTh9KxL8Tip9lMxtg7ce0H99uZOzFzukZOQ5fbww+xdPaODH0TOa7XknuB/b4RGW6GJY+O07IxV4658KAIm/zDJ1OGVwytSHJ0dFvjlSJiB81XJlIVr5qgf1TVE1MOcEWfHMn07pFk6rOzYnlYC4VPuNReewxPB/gwQjsqRGJtFmmTJFv5HL397XausglixD6pbO+9n6KznOrfDN/pWsBPVfosNo3fmUI7Ar+kPhNI9Ayrdd6NsZwGbfY7HqfpJyN7zptiJdEK6//jr2haTkNHG0EP8oicnfX+i740JksujD+qVS2c0TYwjBFbUn9pq7sQCAzWuCzudk9fS6WY1c4Ic10qPmGb5X/E18yDgABlO4fK/xnR5lV6K8cnP4tAO/ffU0C8EGnz4N7as7f0rMAYaEBBCgu//sU5J/gTpK/BYR+OHsoETwf4IIsF0r9wNkYwFfodNMrb/PRA/T3H2/8nP4tqEjzNwAicJsJPlfHnwo=) format('woff2');unicode-range:U+8ECA,U+5305,U+99AC,U+5175}
+
+/* ===== 디자인 토큰 (모든 게임 공통 구조) ===== */
+:root{
+  color-scheme: light dark;
+  --bg:#e8ebea; --panel:#ffffff; --line:#c3cbca; --ink:#0c1013; --ink2:#3d4950;
+  --accent:#13806a; --accent-ink:#ffffff; --accent-soft:#dff1ec;
+  --warn:#b8341f; --warn-soft:#fbe6e1; --win:#a8741a;
+  --wood:#c9923f; --wood-d:#6b4519; --wood-l:#ebcb92;
+  --cho:#1b2f94; --han:#d62218;
+  --r-panel:22px; --r-tile:14px; --r-input:12px; --r-chip:7px; --r-btn:999px;
+  --sh-1:0 1px 2px rgba(20,24,27,.08),0 4px 12px rgba(20,24,27,.07);
+  --sh-2:0 12px 32px rgba(20,24,27,.24),0 2px 6px rgba(20,24,27,.16);
+  --t1:120ms; --t2:200ms; --t3:320ms; --ease:cubic-bezier(.2,.9,.3,1.15);
+  --font:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --sans:"Noto Sans KR","Noto Sans CJK KR","Noto Sans CJK SC","Malgun Gothic",sans-serif;
+  --serif:"Gowun Batang","Noto Serif KR","Noto Serif CJK KR","Noto Serif CJK SC","Source Han Serif K","Batang","Songti SC",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0e1113; --panel:#14181a; --line:#2a3236; --ink:#e8edee; --ink2:#9aa7ac;
+    --accent:#4fcba3; --accent-ink:#06231a; --accent-soft:#143229; --warn:#ff8f78; --warn-soft:#3a1c17; --win:#e6b84a;
+    --cho:#8ea6ff; --han:#ff7a6e; --wood-l:#d9b374;
+    --sh-1:0 1px 2px rgba(0,0,0,.4),0 4px 12px rgba(0,0,0,.3);
+    --sh-2:0 14px 36px rgba(0,0,0,.6),0 2px 6px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 18px/1.5 var(--font);-webkit-text-size-adjust:100%;overflow-x:hidden}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0;touch-action:manipulation}
+input{font:inherit;color:inherit}
+svg{display:block}
+.ic{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+#app{height:100%;height:100dvh}
+.screen{height:100%}
+#app[data-screen=home] #game{display:none}
+#app[data-screen=game] #home{display:none}
+
+/* ===== 공통 부품 ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 24px;border-radius:var(--r-btn);background:var(--panel);box-shadow:var(--sh-1),inset 0 0 0 1px var(--line);font-weight:700;font-size:17px;transition:transform var(--t1) var(--ease),background var(--t1);user-select:none;-webkit-user-select:none}
+.btn:active{transform:scale(.97)}
+.btn.main{background:var(--accent);color:var(--accent-ink);box-shadow:var(--sh-2);box-shadow:var(--sh-2)}
+.btn.big{min-height:64px;font-size:20px;width:100%}
+.btn.danger{color:var(--warn)}
+.btn[disabled],.btn[aria-disabled=true]{opacity:.45;pointer-events:none;box-shadow:inset 0 0 0 1px var(--line)}
+.icbtn{width:48px;height:48px;display:grid;place-items:center;border-radius:var(--r-btn);background:var(--panel);box-shadow:var(--sh-1),inset 0 0 0 1px var(--line);transition:transform var(--t1) var(--ease);flex:none}
+.icbtn:active{transform:scale(.96)}
+.icbtn[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}
+.chip{display:inline-flex;align-items:center;gap:4px;min-height:28px;padding:0 8px;border-radius:var(--r-chip);background:var(--accent-soft);color:var(--ink);font-size:14px;font-weight:600;white-space:nowrap}
+.chip.plain{background:transparent;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink2)}
+.chip .ic{width:16px;height:16px}
+.chip.wait{background:var(--accent-soft)}
+.chip.play{background:var(--warn-soft);color:var(--warn)}
+.oct{--s:44px;position:relative;display:inline-grid;place-items:center;width:var(--s);height:var(--s);flex:none;font:700 calc(var(--s)*.6)/1 var(--sans);color:#1b2f94;filter:drop-shadow(0 1px 1.5px rgba(60,40,10,.35))}
+.oct::before,.oct::after{content:"";position:absolute;clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%)}
+.oct::before{inset:0;background:#b8b09c}
+.oct::after{inset:calc(var(--s)*.04) calc(var(--s)*.04) calc(var(--s)*.08);background:linear-gradient(135deg,#fff,#ece7da)}
+.oct>b{position:relative;z-index:1;font-weight:inherit;margin-top:calc(var(--s)*-.04)}
+.oct.cho{color:#1b2f94}.oct.han{color:#d62218}
+.oct.cho{font-family:"JGCho","Yuji Boku",serif;font-weight:400;font-size:calc(var(--s)*.64)}
+.oct.han{font-family:"JGHan","Kaisei Opti",serif;font-weight:700}
+.oct.sm{--s:28px}
+.oct.empty{filter:none;opacity:.45}
+.sw{position:relative;width:52px;height:32px;border-radius:var(--r-btn);background:var(--line);transition:background var(--t2);flex:none}
+.sw::after{content:"";position:absolute;top:4px;left:4px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.35);transition:transform var(--t2) var(--ease)}
+[aria-checked=true]>.sw{background:var(--accent)}
+[aria-checked=true]>.sw::after{transform:translateX(20px)}
+.row-sw{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;width:100%;text-align:left}
+.row-sw small{display:block;color:var(--ink2);font-size:14px;line-height:1.3}
+.field{width:100%;min-height:56px;padding:0 16px;border-radius:var(--r-input);border:0;background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line);font-size:17px}
+.field:focus{outline:none;box-shadow:inset 0 0 0 2px var(--accent)}
+.lbl{display:block;margin:0 0 8px;font-weight:700;font-size:15px;color:var(--ink2)}
+.tiles{display:grid;gap:8px}
+.tiles.c3{grid-template-columns:repeat(3,1fr)}
+.tiles.c4{grid-template-columns:repeat(4,1fr)}
+.tile{position:relative;min-height:72px;padding:12px 8px;border-radius:var(--r-tile);background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;transition:transform var(--t1) var(--ease),box-shadow var(--t1)}
+.tile:active{transform:scale(.97)}
+.tile b{font-size:20px;line-height:1.2}
+.tile small{font-size:14px;color:var(--ink2);line-height:1.2}
+.tile[aria-checked=true]{background:var(--accent-soft);box-shadow:inset 0 0 0 2.5px var(--accent)}
+.tile[aria-checked=true]::after{content:"";position:absolute;top:8px;right:8px;width:16px;height:16px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.7 2.7L12 5.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;border-radius:var(--r-btn);background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line)}
+.seg button{min-height:48px;border-radius:var(--r-btn);font-weight:700;font-size:16px;transition:background var(--t1),color var(--t1)}
+.seg button[aria-checked=true]{background:var(--accent);color:var(--accent-ink)}
+.hint{word-break:keep-all;margin:8px 0 0;color:var(--ink2);font-size:14px;line-height:1.45}
+.stack{display:flex;flex-direction:column;gap:20px}
+
+/* ===== 홈 ===== */
+#home{overflow-y:auto;-webkit-overflow-scrolling:touch}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+.hd{display:flex;align-items:center;gap:16px;padding:8px 0 16px}
+.brand{flex:1;display:flex;align-items:center;gap:16px;min-width:0}
+.illust{width:min(168px,34vw);height:auto;flex:none;border-radius:20px;box-shadow:var(--sh-2)}
+.brand h1{margin:0;font:700 40px/1.1 var(--serif);letter-spacing:.02em}
+.brand p{margin:4px 0 0;color:var(--ink2);font-size:16px}
+.hd-r{display:flex;align-items:center;gap:8px;flex-direction:column;align-items:flex-end}
+.conn{display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:0 12px;border-radius:var(--r-btn);background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);font-size:14px;font-weight:600;color:var(--ink2);white-space:nowrap}
+.conn i{width:10px;height:10px;border-radius:50%;background:var(--ink2);flex:none}
+.conn[data-s=ok]{color:var(--ink)}.conn[data-s=ok] i{background:var(--accent)}
+.conn[data-s=error] i{background:var(--warn);border-radius:2px;transform:rotate(45deg)}
+.tabs{display:flex;gap:24px;margin:0 0 16px;border-bottom:1.5px solid var(--line)}
+.tabs button{position:relative;min-height:56px;padding:0 4px;font-weight:700;font-size:18px;color:var(--ink2);display:flex;align-items:center;gap:8px}
+.tabs button[aria-selected=true]{color:var(--ink)}
+.tabs button[aria-selected=true]::after{content:"";position:absolute;left:0;right:0;bottom:-1.5px;height:4px;border-radius:4px 4px 0 0;background:var(--accent)}
+.badge{min-width:24px;height:24px;padding:0 8px;border-radius:var(--r-btn);background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:700;display:inline-grid;place-items:center}
+.badge[data-n="0"]{background:var(--line);color:var(--ink2)}
+.panel{background:var(--panel);border-radius:var(--r-panel);padding:24px;box-shadow:var(--sh-1)}
+.panel h2{margin:0 0 20px;font:700 22px/1.3 var(--font)}
+.panels>.panel[hidden]{display:none}
+@media (min-width:900px) and (orientation:landscape){
+  .wrap{max-width:1120px}
+  .tabs{display:none}
+  .panels{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+  .panels>.panel[hidden]{display:block!important}
+}
+@media (max-width:599px){
+  .brand h1{font-size:32px}
+  .illust{width:120px}
+  .hd{flex-direction:column;align-items:stretch;gap:12px}
+  .hd-r{flex-direction:row;justify-content:space-between;align-items:center}
+  .panel{padding:20px 16px}
+}
+.errbox{display:flex;gap:12px;padding:16px;border-radius:var(--r-tile);background:var(--warn-soft);color:var(--ink);margin-bottom:20px}
+.errbox .ic{color:var(--warn);margin-top:2px}
+.errbox b{display:block;margin-bottom:4px}
+.errbox p{margin:0 0 8px;font-size:15px}
+.errbox .btn{min-height:48px;margin-top:8px;font-size:16px}
+.rooms{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.room{display:grid;grid-template-columns:1fr auto;gap:8px 12px;align-items:center;padding:12px 12px 12px 16px;border-radius:var(--r-tile);background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line)}
+.room.mine{box-shadow:inset 0 0 0 2px var(--accent);background:var(--accent-soft)}
+.room h3{margin:0;font-size:17px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.room .meta{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:4px}
+.room .btn{min-height:48px;padding:0 20px;font-size:16px}
+.empty{padding:24px 16px;text-align:center;color:var(--ink2);border-radius:var(--r-tile);border:2px dashed var(--line)}
+.empty .ic{margin:0 auto 8px;width:32px;height:32px}
+.split{display:flex;gap:8px;align-items:stretch}
+.split .field{flex:1;min-width:0;text-transform:uppercase;letter-spacing:.2em;text-align:center;font-weight:700}
+.split .btn{flex:none}
+.hr{height:1.5px;background:var(--line);margin:4px 0}
+
+/* ===== 대국 화면 ===== */
+#game{display:flex;flex-direction:column;overscroll-behavior:none;touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.gbar{display:flex;align-items:center;gap:12px;padding:8px 16px;min-height:72px}
+.gtitle{flex:1;min-width:0}
+.gtitle b{display:block;font-size:18px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gtitle .chips{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:4px}
+.gbody{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) clamp(340px,34vw,440px);gap:16px;padding:0 16px 16px}
+.stage{position:relative;min-width:0;min-height:0}
+#boardBox{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:var(--r-panel);box-shadow:var(--sh-2);overflow:hidden;background:#fbd98f}
+#cv{display:block;touch-action:manipulation;cursor:pointer}
+.ovl{position:absolute;inset:0;display:grid;place-items:center;padding:12px;pointer-events:none;background:rgba(30,18,6,.34);opacity:1;transition:opacity var(--t3)}
+.ovl[hidden]{display:none}
+.ovl.dock{background:none;align-items:end}
+.ovl .card{pointer-events:auto;width:min(100%,420px);max-height:100%;overflow:auto;background:var(--panel);color:var(--ink);border-radius:var(--r-panel);padding:20px;box-shadow:var(--sh-2);display:flex;flex-direction:column;gap:16px;animation:rise var(--t3) var(--ease) both}
+.ovl .card h3{margin:0;font:700 24px/1.25 var(--font);text-align:center}
+.ovl .card p{margin:0;text-align:center;color:var(--ink2)}
+.ovl .card .btns{display:flex;flex-direction:column;gap:8px}
+.ovl .card .btns.two{flex-direction:row}
+.ovl .card .btns.two .btn{flex:1;padding:0 8px}
+.code{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px 16px;border-radius:var(--r-tile);background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line)}
+.code b{font:700 32px/1 var(--font);letter-spacing:.18em;padding-left:.18em}
+.res .big-t{font:700 44px/1.1 var(--serif);text-align:center;letter-spacing:.04em}
+.res.win .big-t{color:var(--win)}
+.res.lose .big-t{color:var(--ink2)}
+.res .sub{font-size:18px;color:var(--ink);text-align:center}
+.res .sc{display:flex;justify-content:center;gap:16px;font-weight:700;font-size:17px}
+@keyframes rise{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.side{display:flex;flex-direction:column;gap:12px;min-height:0}
+.seat{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center;padding:16px;border-radius:var(--r-panel);background:var(--panel);box-shadow:var(--sh-1);box-shadow:var(--sh-1),inset 0 0 0 2px transparent;transition:box-shadow var(--t2)}
+.seat.turn{box-shadow:var(--sh-1),inset 0 0 0 2.5px var(--accent)}
+.seat .who{min-width:0}
+.seat .nm{display:flex;align-items:center;gap:8px;font-size:20px;font-weight:800;line-height:1.3}
+.seat .nm span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seat em.me{font-style:normal;flex:none;font-size:14px;font-weight:700;padding:0 8px;min-height:22px;display:inline-flex;align-items:center;border-radius:var(--r-chip);background:var(--accent);color:var(--accent-ink)}
+.seat .st{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--ink2)}
+.seat .oct{--s:56px}
+.seat .st i{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.seat .st.off i{background:transparent;box-shadow:inset 0 0 0 2px var(--ink2)}
+.seat .clk{grid-column:1/-1;display:flex;align-items:center;gap:12px}
+.seat .t{font:800 32px/1 var(--font);font-variant-numeric:tabular-nums;min-width:76px}
+.seat .bar{flex:1;height:10px;border-radius:var(--r-btn);background:var(--line);overflow:hidden}
+.seat .bar i{display:block;height:100%;width:100%;border-radius:inherit;background:var(--accent);transform-origin:left center;transform:scaleX(var(--p,1))}
+.seat.low .t{color:var(--warn);animation:beat 1s ease-in-out infinite;transform-origin:left center}
+.seat.low .bar i{background:var(--warn)}
+.seat.dim .t{color:var(--ink2);font-weight:600}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+.seat .cap{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px;min-height:28px}
+.seat .cap .oct{animation:pop var(--t2) var(--ease) both}
+.seat .cap:empty::before{content:"잡은 말이 없어요";font-size:14px;color:var(--ink2);line-height:28px}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+.pill{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:8px 16px;border-radius:var(--r-btn);background:var(--panel);box-shadow:var(--sh-1);font-weight:800;font-size:22px;text-align:center;line-height:1.25}
+.pill.mine{background:var(--accent);color:var(--accent-ink)}
+.pill.warn{background:var(--warn);color:#fff}
+.pill.end{background:var(--ink);color:var(--bg)}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.acts .btn{padding:0 8px;gap:4px;font-size:16px}
+.replay{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.replay .rc{grid-column:1/-1;text-align:center;font-weight:700;color:var(--ink2);font-size:16px}
+.replay .btn{padding:0}
+.toasts{position:fixed;left:0;right:0;top:12px;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;z-index:50}
+.toast{max-width:min(92vw,520px);padding:12px 20px;border-radius:var(--r-btn);background:var(--ink);color:var(--bg);font-weight:600;font-size:16px;box-shadow:var(--sh-2);animation:rise var(--t2) var(--ease) both}
+.toast.out{opacity:0;transition:opacity var(--t2)}
+.flash{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;pointer-events:none;font:700 64px/1 var(--serif);color:#fff;text-shadow:0 2px 0 rgba(120,20,10,.9),0 6px 24px rgba(0,0,0,.5);letter-spacing:.08em;animation:flash 900ms var(--ease) both}
+.flash.gold{color:#ffe08a;text-shadow:0 2px 0 rgba(90,50,0,.9),0 6px 24px rgba(0,0,0,.5)}
+@keyframes flash{0%{opacity:0;transform:translateY(-50%) scale(.6)}25%{opacity:1;transform:translateY(-50%) scale(1.08)}75%{opacity:1;transform:translateY(-50%) scale(1)}100%{opacity:0;transform:translateY(-50%) scale(1.05)}}
+
+/* 모달 */
+.scrim{position:fixed;inset:0;background:rgba(10,14,16,.52);display:grid;place-items:center;padding:16px;z-index:40;animation:fade var(--t2) both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.dlg{width:min(480px,100%);max-height:92%;overflow:auto;background:var(--panel);border-radius:var(--r-panel);box-shadow:var(--sh-2);padding:24px;animation:rise var(--t3) var(--ease) both}
+.dlg h2{margin:0 0 16px;font:700 22px/1.3 var(--font)}
+.dlg .body{display:flex;flex-direction:column;gap:20px}
+.dlg .foot{display:flex;gap:8px;margin-top:24px}
+.dlg .foot .btn{flex:1}
+.dlg p{margin:0;color:var(--ink2)}
+.dlg ul.rules{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:16px}
+.dlg ul.rules b{color:var(--ink)}
+.menu{display:flex;flex-direction:column;gap:8px}
+.menu .btn{justify-content:flex-start;padding:0 20px;gap:12px}
+@media (max-width:599px){
+  .scrim{place-items:end center;padding:0}
+  .dlg{border-radius:var(--r-panel) var(--r-panel) 0 0;animation:sheet var(--t3) var(--ease) both}
+  @keyframes sheet{from{transform:translateY(100%)}to{transform:none}}
+}
+
+/* 세로 화면·휴대폰 배치 */
+@media (orientation:portrait),(max-width:759px){
+  .gbar{min-height:64px;padding:8px 12px}
+  .gbody{grid-template-columns:1fr 1fr;grid-template-rows:auto auto minmax(0,1fr) auto;gap:8px;padding:0 12px 12px;grid-template-areas:"sa sb" "pl pl" "st st" "ac ac"}
+  .side{display:contents}
+  #seatTop{grid-area:sa}#seatBottom{grid-area:sb}
+  .pill{grid-area:pl;min-height:48px;font-size:18px}
+  .stage{grid-area:st}
+  .acts,.replay{grid-area:ac}
+  .seat{padding:12px;gap:4px 8px}
+  .seat .t{font-size:24px;min-width:64px}
+  .seat .oct{--s:44px}
+  .seat .nm{font-size:16px}
+  .seat .cap .oct{--s:24px}
+  .seat .cap{min-height:24px}
+  .flash{font-size:48px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important}
+}
+
+</style>
+</head>
+<body>
+<main id="app" data-screen="home">
+
+<!-- 홈 -->
+<section id="home" class="screen">
+  <div class="wrap">
+    <header class="hd">
+      <div class="brand">
+        <svg class="illust" viewBox="0 0 240 132" role="img" aria-label="장기판 위의 초와 한 말" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="il-p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ece7da"/></linearGradient></defs>
+<rect x="2" y="2" width="236" height="128" rx="20" fill="#fbd98f"/>
+<g stroke="#4a3418" stroke-width="1.6" fill="none" opacity=".75" stroke-linecap="round"><path d="M22 22H218M22 66H218M22 110H218M22 22V110M218 22V110M70 22V110M118 22V110M166 22V110"/><path d="M94 22L142 110M142 22L94 110"/></g>
+<polygon points="119.3,83.8 99.8,103.3 72.2,103.3 52.7,83.8 52.7,56.2 72.2,36.7 99.8,36.7 119.3,56.2" fill="#b8b09c"/><polygon points="119.3,77.8 99.8,97.3 72.2,97.3 52.7,77.8 52.7,50.2 72.2,30.7 99.8,30.7 119.3,50.2" fill="url(#il-p)" stroke="#a8a08c" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="86" y="82" font-family="JGCho,'Yuji Boku',serif" font-size="52" text-anchor="middle" fill="#1b2f94">楚</text>
+<polygon points="189.3,83.8 169.8,103.3 142.2,103.3 122.7,83.8 122.7,56.2 142.2,36.7 169.8,36.7 189.3,56.2" fill="#b8b09c"/><polygon points="189.3,77.8 169.8,97.3 142.2,97.3 122.7,77.8 122.7,50.2 142.2,30.7 169.8,30.7 189.3,50.2" fill="url(#il-p)" stroke="#a8a08c" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="183.7,75.5 167.5,91.7 144.5,91.7 128.3,75.5 128.3,52.5 144.5,36.3 167.5,36.3 183.7,52.5" fill="none" stroke="#d62218" stroke-width="1.4" opacity=".45" stroke-linejoin="round"/>
+<text x="156" y="82" font-family="JGHan,'Kaisei Opti',serif" font-weight="700" font-size="48" text-anchor="middle" fill="#d62218">漢</text></svg>
+        <div><h1>장기</h1><p>친구와 한 판</p></div>
+      </div>
+      <div class="hd-r">
+        <span id="conn" class="conn" data-s="check"><i></i><b>연결 확인 중</b></span>
+        <button id="btnSoundHome" class="icbtn" data-sound aria-label="소리 켜기" aria-pressed="false"></button>
+      </div>
+    </header>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="solo" aria-selected="true">혼자하기</button>
+      <button role="tab" data-tab="online" aria-selected="false">온라인<span id="roomBadge" class="badge" data-n="0">0</span></button>
+    </nav>
+    <div class="panels">
+      <section id="panelSolo" class="panel" aria-label="혼자하기"></section>
+      <section id="panelOnline" class="panel" aria-label="온라인 대전" hidden></section>
+    </div>
+  </div>
+</section>
+
+<!-- 대국 -->
+<section id="game" class="screen">
+  <div class="gbar">
+    <button id="btnLeave" class="icbtn" aria-label="나가기"></button>
+    <div class="gtitle"><b id="gName"></b><div class="chips" id="gChips"></div></div>
+    <button id="btnSoundGame" class="icbtn" data-sound aria-label="소리 켜기" aria-pressed="false"></button>
+    <button id="btnInvite" class="icbtn" aria-label="초대 링크 복사"></button>
+  </div>
+  <div class="gbody">
+    <div class="stage" id="stage">
+      <div id="boardBox">
+        <canvas id="cv" aria-label="장기판"></canvas>
+        <div id="ovl" class="ovl" hidden></div>
+        <div id="flash" class="flash" hidden></div>
+      </div>
+    </div>
+    <aside class="side">
+      <div id="seatTop" class="seat"></div>
+      <div id="pill" class="pill" role="status" aria-live="polite"></div>
+      <div id="seatBottom" class="seat"></div>
+      <div id="acts" class="acts"></div>
+      <div id="replay" class="replay" hidden></div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<div id="modalRoot"></div>
+
+<script src="config.js"></script>
+<script id="engineSrc">
+/* ===== 장기 규칙 엔진 + 컴퓨터 상대 (DOM과 분리된 순수 코드) ===== */
+const Janggi = (function () {
+  'use strict';
+  // 말 종류: 1 궁(장) 2 차 3 포 4 마 5 상 6 사 7 졸·병.  초(CHO)=+, 한(HAN)=-
+  const K = 1, R = 2, C = 3, H = 4, E = 5, A = 6, P = 7;
+  const CHO = 1, HAN = -1;
+  const PASS = 16383;                       // "한 수 쉼"을 나타내는 값
+  const SCORE_VAL = [0, 0, 13, 7, 5, 3, 3, 2];
+  const DEOM = 1.5;                         // 한(후공)에게 주는 덤
+  // 상차림(마·상 배치). 자기 편에서 보아 왼쪽부터 2·3·7·8번째 줄
+  const SU_PATTERNS = ['HEEH', 'EHHE', 'HEHE', 'EHEH'];
+  const SU_NAMES = ['안상차림', '바깥상차림', '왼상차림', '오른상차림'];
+  const ORTH = [[0, -1], [0, 1], [-1, 0], [1, 0]];
+  const DIAG = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
+
+  function initBoard(suCho, suHan) {
+    const b = new Int8Array(90);
+    function place(side, su) {
+      const cols = [1, 2, 6, 7], pat = SU_PATTERNS[su | 0];
+      const set = (x, y, t) => {
+        const X = side === CHO ? x : 8 - x, Y = side === CHO ? y : 9 - y;
+        b[Y * 9 + X] = t * side;
+      };
+      set(0, 9, R); set(8, 9, R); set(3, 9, A); set(5, 9, A); set(4, 8, K);
+      set(1, 7, C); set(7, 7, C);
+      for (const x of [0, 2, 4, 6, 8]) set(x, 6, P);
+      for (let i = 0; i < 4; i++) set(cols[i], 9, pat[i] === 'H' ? H : E);
+    }
+    place(CHO, suCho); place(HAN, suHan);
+    return b;
+  }
+
+  const inB = (x, y) => x >= 0 && x < 9 && y >= 0 && y < 10;
+  const inPalace = (side, x, y) => x >= 3 && x <= 5 && (side === CHO ? (y >= 7 && y <= 9) : (y >= 0 && y <= 2));
+  const isDiagPt = (x, y) => (x === 4 && (y === 1 || y === 8)) || ((x === 3 || x === 5) && (y === 0 || y === 2 || y === 7 || y === 9));
+
+  // side 편의 "가짜 합법수"(자기 궁이 잡히는지는 따로 검사) 생성
+  function gen(b, side, out) {
+    for (let i = 0; i < 90; i++) {
+      const p = b[i];
+      if (p === 0 || (p > 0) !== (side > 0)) continue;
+      const t = p > 0 ? p : -p, x = i % 9, y = (i / 9) | 0;
+      const add = (nx, ny) => {
+        if (!inB(nx, ny)) return;
+        const q = b[ny * 9 + nx];
+        if (q === 0 || (q > 0) !== (side > 0)) out.push((i << 7) | (ny * 9 + nx));
+      };
+      switch (t) {
+        case K: case A:
+          for (const [dx, dy] of ORTH) if (inPalace(side, x + dx, y + dy)) add(x + dx, y + dy);
+          if (isDiagPt(x, y)) for (const [dx, dy] of DIAG) {
+            const nx = x + dx, ny = y + dy;
+            if (inPalace(side, nx, ny) && isDiagPt(nx, ny)) add(nx, ny);
+          }
+          break;
+        case R:
+          for (const [dx, dy] of ORTH) {
+            let nx = x + dx, ny = y + dy;
+            while (inB(nx, ny)) {
+              const q = b[ny * 9 + nx];
+              if (q === 0) { out.push((i << 7) | (ny * 9 + nx)); }
+              else { if ((q > 0) !== (side > 0)) out.push((i << 7) | (ny * 9 + nx)); break; }
+              nx += dx; ny += dy;
+            }
+          }
+          if (isDiagPt(x, y)) for (const [dx, dy] of DIAG) {
+            let nx = x + dx, ny = y + dy;
+            while (inB(nx, ny) && isDiagPt(nx, ny)) {
+              const q = b[ny * 9 + nx];
+              if (q === 0) { out.push((i << 7) | (ny * 9 + nx)); }
+              else { if ((q > 0) !== (side > 0)) out.push((i << 7) | (ny * 9 + nx)); break; }
+              nx += dx; ny += dy;
+            }
+          }
+          break;
+        case C: {
+          const run = (dx, dy, diag) => {
+            let nx = x + dx, ny = y + dy;
+            const ok = (X, Y) => inB(X, Y) && (!diag || isDiagPt(X, Y));
+            while (ok(nx, ny) && b[ny * 9 + nx] === 0) { nx += dx; ny += dy; }
+            if (!ok(nx, ny)) return;
+            const s = b[ny * 9 + nx];
+            if (s === C || s === -C) return;            // 포는 포를 넘을 수 없어요
+            nx += dx; ny += dy;
+            while (ok(nx, ny)) {
+              const q = b[ny * 9 + nx];
+              if (q === 0) out.push((i << 7) | (ny * 9 + nx));
+              else {
+                if ((q > 0) !== (side > 0) && q !== C && q !== -C) out.push((i << 7) | (ny * 9 + nx));
+                break;
+              }
+              nx += dx; ny += dy;
+            }
+          };
+          for (const [dx, dy] of ORTH) run(dx, dy, false);
+          if (isDiagPt(x, y)) for (const [dx, dy] of DIAG) run(dx, dy, true);
+          break;
+        }
+        case H:
+          for (const [dx, dy] of ORTH) {
+            const bx = x + dx, by = y + dy;
+            if (!inB(bx, by) || b[by * 9 + bx] !== 0) continue;
+            for (const s of [-1, 1]) {
+              if (dx === 0) add(x + s, y + 2 * dy); else add(x + 2 * dx, y + s);
+            }
+          }
+          break;
+        case E:
+          for (const [dx, dy] of ORTH) {
+            const bx = x + dx, by = y + dy;
+            if (!inB(bx, by) || b[by * 9 + bx] !== 0) continue;
+            for (const s of [-1, 1]) {
+              const mx = dx === 0 ? x + s : x + 2 * dx, my = dx === 0 ? y + 2 * dy : y + s;
+              if (!inB(mx, my) || b[my * 9 + mx] !== 0) continue;
+              if (dx === 0) add(x + 2 * s, y + 3 * dy); else add(x + 3 * dx, y + 2 * s);
+            }
+          }
+          break;
+        case P: {
+          const fy = side === CHO ? -1 : 1;
+          add(x, y + fy); add(x - 1, y); add(x + 1, y);
+          if (isDiagPt(x, y)) for (const dx of [-1, 1]) {
+            const nx = x + dx, ny = y + fy;
+            if (inB(nx, ny) && isDiagPt(nx, ny)) add(nx, ny);
+          }
+          break;
+        }
+      }
+    }
+    return out;
+  }
+
+  const make = (b, m) => { const f = m >> 7, t = m & 127, c = b[t]; b[t] = b[f]; b[f] = 0; return c; };
+  const unmake = (b, m, c) => { const f = m >> 7, t = m & 127; b[f] = b[t]; b[t] = c; };
+  function findKing(b, side) { const k = side * K; for (let i = 0; i < 90; i++) if (b[i] === k) return i; return -1; }
+  function attacked(b, pos, bySide) {
+    const mv = []; gen(b, bySide, mv);
+    for (let i = 0; i < mv.length; i++) if ((mv[i] & 127) === pos) return true;
+    return false;
+  }
+  function inCheck(b, side) { const k = findKing(b, side); return k >= 0 && attacked(b, k, -side); }
+  function legalMoves(b, side) {
+    const pm = [], out = []; gen(b, side, pm);
+    for (const m of pm) {
+      const c = make(b, m);
+      if (!inCheck(b, side)) out.push(m);
+      unmake(b, m, c);
+    }
+    return out;
+  }
+  function bikjang(b) {
+    const a = findKing(b, CHO), d = findKing(b, HAN);
+    if (a < 0 || d < 0 || a % 9 !== d % 9) return false;
+    for (let i = Math.min(a, d) + 9; i < Math.max(a, d); i += 9) if (b[i] !== 0) return false;
+    return true;
+  }
+  const canPass = (b, side) => !inCheck(b, side) || bikjang(b);
+  function score(b) {
+    let cho = 0, han = DEOM;
+    for (let i = 0; i < 90; i++) { const p = b[i]; if (!p) continue; if (p > 0) cho += SCORE_VAL[p]; else han += SCORE_VAL[-p]; }
+    return { cho, han };
+  }
+  const posKey = (b, turn) => { let s = turn > 0 ? 'c' : 'h'; for (let i = 0; i < 90; i++) s += String.fromCharCode(70 + b[i]); return s; };
+
+  // 수 기록(tokens)으로부터 판을 되살리고, 끝났는지까지 판정해요
+  function analyze(suCho, suHan, tokens) {
+    const b = initBoard(suCho, suHan), n = tokens.length;
+    let prevBik = false;
+    for (let i = 0; i < n; i++) {
+      const m = tokens[i];
+      if (i === n - 1) prevBik = bikjang(b);
+      if (m !== PASS) make(b, m);
+    }
+    const turn = n % 2 === 0 ? CHO : HAN;
+    let ended = null;
+    if (n > 0) {
+      const last = tokens[n - 1];
+      if (last === PASS) {
+        if (prevBik) ended = { reason: 'bikjang' };
+        else if (n >= 2 && tokens[n - 2] === PASS) ended = { reason: 'count' };
+        if (ended) { const s = score(b); ended.winner = s.cho > s.han ? 'cho' : 'han'; ended.score = s; }
+      } else if (inCheck(b, turn) && legalMoves(b, turn).length === 0) {
+        ended = { reason: 'checkmate', winner: turn === CHO ? 'han' : 'cho' };
+      }
+    }
+    return { board: b, turn, ended, check: inCheck(b, turn), bikjang: bikjang(b), n };
+  }
+  // 검증: 이 수가 지금 둘 수 있는 수인가요?
+  function isLegalToken(b, turn, m) {
+    if (m === PASS) return canPass(b, turn);
+    return legalMoves(b, turn).indexOf(m) >= 0;
+  }
+
+  /* ---------------- 컴퓨터 상대 ---------------- */
+  const PV = [0, 100000, 1300, 700, 500, 300, 300, 200];
+  const MATE = 100000;
+  function evaluate(b) {
+    let s = 0;
+    for (let i = 0; i < 90; i++) {
+      const p = b[i]; if (!p) continue;
+      const t = p > 0 ? p : -p, x = i % 9, y = (i / 9) | 0, cx = 4 - Math.abs(x - 4);
+      let v = PV[t];
+      if (t === P) { const adv = p > 0 ? 6 - y : y - 3; v += adv * 8 + (adv >= 5 && x >= 3 && x <= 5 ? 30 : 0); }
+      else if (t === R) v += cx * 3;
+      else if (t === H || t === E) v += cx * 5;
+      else if (t === C) v += cx * 2;
+      s += p > 0 ? v : -v;
+    }
+    return s;
+  }
+  function orderScore(b, m) {
+    const c = b[m & 127]; if (!c) return 0;
+    const a = b[m >> 7];
+    return 10000 + PV[c > 0 ? c : -c] * 10 - PV[a > 0 ? a : -a];
+  }
+  function pickNext(ms, sc, i) {
+    let bi = i;
+    for (let j = i + 1; j < ms.length; j++) if (sc[j] > sc[bi]) bi = j;
+    if (bi !== i) { let t = ms[i]; ms[i] = ms[bi]; ms[bi] = t; t = sc[i]; sc[i] = sc[bi]; sc[bi] = t; }
+  }
+  function qsearch(b, side, alpha, beta, qd, ctx) {
+    ctx.nodes++;
+    const stand = side * evaluate(b);
+    if (stand >= beta) return stand;
+    if (stand > alpha) alpha = stand;
+    if (qd <= 0) return stand;
+    const ms = []; gen(b, side, ms);
+    const caps = [], sc = [];
+    for (const m of ms) if (b[m & 127]) { caps.push(m); sc.push(orderScore(b, m)); }
+    for (let i = 0; i < caps.length; i++) {
+      pickNext(caps, sc, i);
+      const m = caps[i], c = make(b, m);
+      if (c === -side * K) { unmake(b, m, c); return MATE; }
+      const v = -qsearch(b, -side, -beta, -alpha, qd - 1, ctx);
+      unmake(b, m, c);
+      if (v >= beta) return v;
+      if (v > alpha) alpha = v;
+    }
+    return alpha;
+  }
+  function negamax(b, side, depth, alpha, beta, ply, ctx) {
+    if ((++ctx.nodes & 1023) === 0 && ctx.deadline && Date.now() > ctx.deadline) ctx.stop = true;
+    if (ctx.stop) return 0;
+    if (depth <= 0) return ctx.qd > 0 ? qsearch(b, side, alpha, beta, ctx.qd, ctx) : side * evaluate(b);
+    const ms = []; gen(b, side, ms);
+    if (!ms.length) return side * evaluate(b);
+    const sc = ms.map(m => orderScore(b, m));
+    let best = -Infinity;
+    for (let i = 0; i < ms.length; i++) {
+      pickNext(ms, sc, i);
+      const m = ms[i], c = make(b, m);
+      let v;
+      if (c === -side * K) v = MATE + depth;
+      else v = -negamax(b, -side, depth - 1, -beta, -alpha, ply + 1, ctx);
+      unmake(b, m, c);
+      if (ctx.stop) return 0;
+      if (v > best) best = v;
+      if (v > alpha) alpha = v;
+      if (alpha >= beta) break;
+    }
+    return best;
+  }
+  const LEVELS = [
+    { name: '하', depth: 1, qd: 0, noise: 160, random: 0.15, time: 0 },
+    { name: '중', depth: 3, qd: 2, noise: 12, random: 0, time: 0 },
+    { name: '상', depth: 8, qd: 4, noise: 0, random: 0, time: 1000 }
+  ];
+  // 컴퓨터가 둘 수를 골라요. opts: {level, timeMs, depth, seen(Set of posKey), rnd}
+  function chooseMove(boardArr, side, opts) {
+    opts = opts || {};
+    const b = Int8Array.from(boardArr);
+    const L = Object.assign({}, LEVELS[opts.level == null ? 1 : opts.level]);
+    if (opts.depth) { L.depth = opts.depth; L.time = 0; }
+    if (opts.timeMs != null) L.time = opts.timeMs;
+    const rnd = opts.rnd || Math.random;
+    const t0 = Date.now();
+    const legal = legalMoves(b, side);
+    const info = { depth: 0, nodes: 0, ms: 0 };
+    if (!legal.length) return { move: PASS, info };
+    const seen = opts.seen || null;
+    // 점수 앞서고 있고 빅장이면 쉬어서 점수로 끝내요
+    if (bikjang(b)) {
+      const s = score(b), mine = side === CHO ? s.cho : s.han, theirs = side === CHO ? s.han : s.cho;
+      if (mine > theirs) return { move: PASS, info };
+    }
+    if (L.random && rnd() < L.random) return { move: legal[(rnd() * legal.length) | 0], info };
+    const ctx = { nodes: 0, stop: false, deadline: L.time ? t0 + L.time : 0, qd: L.qd };
+    let rootMoves = legal.slice();
+    let rootScores = rootMoves.map(m => orderScore(b, m));
+    let best = rootMoves[0], bestV = -Infinity;
+    const maxD = L.depth, exact = L.noise > 0;
+    for (let d = 1; d <= maxD; d++) {
+      const order = rootMoves.map((m, i) => ({ m, s: rootScores[i] })).sort((p, q) => q.s - p.s);
+      let alpha = -Infinity, curBest = null, curV = -Infinity;
+      const vals = [];
+      for (let i = 0; i < order.length; i++) {
+        const m = order[i].m, c = make(b, m);
+        let v;
+        if (c === -side * K) v = MATE + d;
+        else {
+          v = -negamax(b, -side, d - 1, -Infinity, exact ? Infinity : -alpha, 1, ctx);
+          // 같은 곳을 되풀이하는 수는 조금 깎아요
+          if (seen) { const nk = posKey(b, -side); if (seen.has(nk)) v -= 60; }
+        }
+        unmake(b, m, c);
+        if (ctx.stop) break;
+        vals.push([m, v]);
+        if (v > curV) { curV = v; curBest = m; }
+        if (v > alpha) alpha = v;
+      }
+      if (ctx.stop) break;
+      best = curBest; bestV = curV; info.depth = d;
+      rootScores = rootMoves.map(m => { const f = vals.find(x => x[0] === m); return f ? f[1] : -1e9; });
+      if (bestV >= MATE) break;
+      if (L.time && Date.now() - t0 > L.time * 0.55) break;
+      // 노이즈(약한 단계)
+      if (L.noise && d === maxD) {
+        let nb = null, nv = -Infinity;
+        for (const [m, v] of vals) { const w = v + (rnd() * 2 - 1) * L.noise; if (w > nv) { nv = w; nb = m; } }
+        best = nb;
+      }
+    }
+    info.nodes = ctx.nodes; info.ms = Date.now() - t0;
+    return { move: best, info };
+  }
+
+  return {
+    K, R, C, H, E, A, P, CHO, HAN, PASS, SCORE_VAL, DEOM, SU_NAMES, SU_PATTERNS, LEVELS,
+    initBoard, gen, make, unmake, findKing, inCheck, legalMoves, bikjang, canPass, score,
+    analyze, isLegalToken, posKey, evaluate, chooseMove
+  };
+})();
+if (typeof module !== 'undefined' && module.exports) module.exports = Janggi;
+
+</script>
+<script>
+/* ===== 쉽게 바꿀 수 있는 설정 (숫자만 고치면 돼요) ===== */
+const ONLINE_LIMITS = [30, 60, 0];       // 방 만들기에서 고르는 "한 수당 제한시간(초)". 0 = 제한 없음
+const DEFAULT_ONLINE_LIMIT = 30;         // 기본값
+const SOLO_LIMITS = [90, 60, 45];        // 혼자하기: 난이도(하·중·상)별 내 제한시간(초)
+const AI_MIN_THINK_MS = 500;             // 컴퓨터가 너무 빨리 두지 않도록 최소 생각 시간
+const ROOM_HIDE_HOURS = 24;              // 이 시간이 지난 방은 목록에서 숨겨요
+const FB_VERSION = '10.12.2';            // Firebase SDK 버전(고정)
+
+/* ===== 도우미 ===== */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+};
+const J = Janggi;
+// 초(파랑)는 직접 그린 붓글씨(CHO_PATH), 한(빨강)은 또렷한 고딕체
+const GLYPH = { cho: { 1: '楚', 2: '車', 3: '包', 4: '馬', 5: '象', 6: '士', 7: '卒' }, han: { 1: '漢', 2: '車', 3: '包', 4: '馬', 5: '象', 6: '士', 7: '兵' } };
+const SIDE_NAME = { cho: '초', han: '한' };
+const other = s => (s === 'cho' ? 'han' : 'cho');
+const sideNum = s => (s === 'cho' ? J.CHO : J.HAN);
+
+/* ===== 아이콘 (선 아이콘, currentColor) ===== */
+const P = {
+  back: '<path d="M15 5l-7 7 7 7"/>', link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+  soundOn: '<path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/>',
+  soundOff: '<path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l5 6M22 9l-5 6"/>',
+  undo: '<path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/>', rest: '<path d="M8 5v14M16 5v14"/>',
+  more: '<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
+  flag: '<path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/>', book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5z"/><path d="M4 21h15"/>',
+  calc: '<rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/>',
+  handshake: '<path d="M3 12l4-4 4 1 3-2 4 3 3 3"/><path d="M7 16l3 3 2-2 2 2 3-3"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>', play: '<path d="M7 4l13 8-13 8V4z"/>', bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>',
+  copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/>',
+  eye: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', alert: '<path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18v.5"/>',
+  hourglass: '<path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/>',
+  first: '<path d="M6 5v14M19 5l-9 7 9 7V5z"/>', prev: '<path d="M17 5l-9 7 9 7V5z"/>', next: '<path d="M7 5l9 7-9 7V5z"/>', last: '<path d="M18 5v14M5 5l9 7-9 7V5z"/>',
+  refresh: '<path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/>', door: '<path d="M14 3h5v18h-5M10 8l-4 4 4 4M6 12h10"/>', lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'
+};
+const icon = n => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${P[n]}</svg>`;
+
+/* ===== 토스트 / 모달 ===== */
+function toast(msg, ms) {
+  const box = $('#toasts'), t = document.createElement('div');
+  t.className = 'toast'; t.textContent = msg; box.appendChild(t);
+  while (box.children.length > 3) box.firstChild.remove();
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 220); }, ms || 2600);
+}
+let modalCount = 0;
+function openModal(o) {
+  const root = $('#modalRoot'), sc = document.createElement('div');
+  sc.className = 'scrim'; sc.setAttribute('role', 'dialog'); sc.setAttribute('aria-modal', 'true');
+  const d = document.createElement('div'); d.className = 'dlg';
+  d.innerHTML = `${o.title ? `<h2>${esc(o.title)}</h2>` : ''}<div class="body"></div>${o.actions ? '<div class="foot"></div>' : ''}`;
+  const body = $('.body', d);
+  if (typeof o.body === 'string') body.innerHTML = o.body; else if (o.body) body.appendChild(o.body);
+  const close = v => { sc.remove(); modalCount--; if (o.onClose) o.onClose(v); };
+  if (o.actions) o.actions.forEach(a => {
+    const b = document.createElement('button'); b.className = 'btn ' + (a.kind || ''); b.innerHTML = esc(a.label);
+    b.onclick = () => { if (a.onClick) { const r = a.onClick(d); if (r === false) return; } if (a.close !== false) close(a.value); };
+    $('.foot', d).appendChild(b);
+  });
+  sc.addEventListener('pointerdown', e => { if (e.target === sc && !o.sticky) close(undefined); });
+  sc.appendChild(d); root.appendChild(sc); modalCount++;
+  return { el: d, close, body };
+}
+function confirmBox(title, text, okLabel, danger) {
+  return new Promise(res => {
+    openModal({ title, body: `<p>${esc(text).replace(/\n/g, '<br>')}</p>`, onClose: v => res(v === true),
+      actions: [{ label: '취소', value: false }, { label: okLabel || '확인', kind: danger ? 'main danger' : 'main', value: true }] });
+  });
+}
+
+/* ===== 설정 저장 ===== */
+const SET = Object.assign({ level: 1, side: 'cho', su: 0, limitOn: true, nick: '', sound: false, oneTap: false, lastRoom: '' }, store.get('jg_settings', {}));
+const saveSet = () => store.set('jg_settings', SET);
+if (!SET.nick) { SET.nick = '손님' + String(100 + ((Math.random() * 900) | 0)); saveSet(); }
+
+/* ===== 소리 (WebAudio로 직접 합성, 기본은 꺼짐) ===== */
+const Snd = (() => {
+  let ac = null, master = null; const last = {};
+  function ctx() {
+    if (ac) return ac;
+    try { const A = window.AudioContext || window.webkitAudioContext; if (!A) return null; ac = new A(); master = ac.createGain(); master.gain.value = .7; master.connect(ac.destination); } catch (e) { ac = null; }
+    return ac;
+  }
+  function unlock() { const a = ctx(); if (a && a.state === 'suspended') a.resume().catch(() => {}); }
+  function env(g, t, a, peak, d) { g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, t + a + d); }
+  function tone(f0, f1, dur, type, vol, delay) {
+    const a = ctx(); if (!a) return; const t = a.currentTime + (delay || 0);
+    const o = a.createOscillator(), g = a.createGain(); o.type = type || 'sine'; o.frequency.setValueAtTime(f0, t);
+    if (f1 && f1 !== f0) o.frequency.exponentialRampToValueAtTime(f1, t + dur);
+    env(g, t, .006, vol, dur); o.connect(g); g.connect(master); o.start(t); o.stop(t + dur + .05);
+  }
+  function noise(dur, vol, hp, delay) {
+    const a = ctx(); if (!a) return; const t = a.currentTime + (delay || 0), n = Math.max(1, (a.sampleRate * dur) | 0);
+    const buf = a.createBuffer(1, n, a.sampleRate), d = buf.getChannelData(0); for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / n);
+    const s = a.createBufferSource(); s.buffer = buf; const f = a.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = hp; f.Q.value = .9;
+    const g = a.createGain(); env(g, t, .004, vol, dur); s.connect(f); f.connect(g); g.connect(master); s.start(t);
+  }
+  const defs = {
+    place() { tone(190, 95, .13, 'sine', .55); noise(.05, .35, 2400); },                       // 착수: 나무 딱
+    capture() { tone(150, 70, .2, 'sine', .7); noise(.09, .5, 1800); tone(620, 420, .06, 'triangle', .2, .01); },
+    check() { tone(740, 740, .12, 'triangle', .35); tone(554, 554, .22, 'triangle', .35, .13); },
+    join() { tone(660, 660, .14, 'sine', .3); tone(880, 880, .22, 'sine', .3, .12); },
+    tick() { tone(1100, 1000, .05, 'square', .12); },
+    win() { [523, 659, 784, 1047].forEach((f, i) => tone(f, f, .32, 'triangle', .34, i * .11)); },
+    lose() { tone(392, 392, .3, 'sine', .3); tone(311, 294, .5, 'sine', .3, .22); },
+    error() { tone(200, 160, .14, 'square', .14); }
+  };
+  function play(name) {
+    if (!SET.sound) return; const now = performance.now();
+    if (last[name] && now - last[name] < 60) return; last[name] = now;
+    if (!ctx()) return; unlock(); try { defs[name](); } catch (e) {}
+  }
+  function buzz(ms) { try { if (navigator.vibrate) navigator.vibrate(ms || 30); } catch (e) {} }
+  function set(on) { SET.sound = !!on; saveSet(); refresh(); if (on) { unlock(); play('place'); } }
+  function refresh() {
+    $$('[data-sound]').forEach(b => {
+      b.setAttribute('aria-pressed', SET.sound ? 'true' : 'false'); b.setAttribute('aria-label', SET.sound ? '소리 끄기' : '소리 켜기');
+      b.innerHTML = icon(SET.sound ? 'soundOn' : 'soundOff');
+    });
+  }
+  document.addEventListener('pointerdown', () => { if (SET.sound) unlock(); }, { passive: true });
+  return { play, buzz, set, refresh, unlock };
+})();
+
+/* ===== 장기판 그리기 (Canvas) : 판 질감·말 모양은 크기별로 한 번만 만들어 재사용해요 ===== */
+const R = (() => {
+  const cv = $('#cv'), box = $('#boardBox'), ctx = cv.getContext('2d');
+  const M = 0.62;                                    // 판 가장자리 여백(칸 단위)
+  const SIZE = { 1: .9, 2: .8, 3: .8, 4: .8, 5: .8, 6: .7, 7: .66 };
+  const INK = { 1: '#1b2f94', '-1': '#d62218' };
+  const FONT = '"Noto Sans KR","Noto Sans CJK KR","Noto Sans CJK SC","Malgun Gothic","Apple SD Gothic Neo","Source Han Sans K",sans-serif';
+  let cell = 60, W = 0, H = 0, dpr = 1, bg = null, sprites = {};
+  let raf = 0, col = { accent: '#13806a', warn: '#b8341f' };
+  const reduced = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const st = { board: null, flip: false, last: null, check: -1, sel: -1, dests: [], preview: -1, anim: null, flash: null, win: null, parts: [], lastT: 0 };
+
+  function themeColors() {
+    const cs = getComputedStyle(document.documentElement);
+    col.accent = cs.getPropertyValue('--accent').trim() || col.accent; col.warn = cs.getPropertyValue('--warn').trim() || col.warn;
+  }
+  const octPath = (g, cx, cy, r) => { g.beginPath(); for (let k = 0; k < 8; k++) { const a = (22.5 + 45 * k) * Math.PI / 180, x = cx + r * Math.cos(a), y = cy + r * Math.sin(a); k ? g.lineTo(x, y) : g.moveTo(x, y); } g.closePath(); };
+  const pos = i => { const x = i % 9, y = (i / 9) | 0, fx = st.flip ? 8 - x : x, fy = st.flip ? 9 - y : y; return [(M + fx) * cell, (M + fy) * cell]; };
+
+  function fit(availW, availH) {
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    const c = Math.max(24, Math.floor(Math.min(availW / (8 + 2 * M), availH / (9 + 2 * M)) * 2) / 2);
+    cell = c; W = Math.round(c * (8 + 2 * M)); H = Math.round(c * (9 + 2 * M));
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    box.style.width = W + 'px'; box.style.height = H + 'px';
+    rebuild();
+  }
+  function rebuild() { themeColors(); if (!W || !H) return; buildBg(); buildSprites(); invalidate(); }
+
+  function buildBg() {
+    const c = document.createElement('canvas'); c.width = Math.round(W * dpr); c.height = Math.round(H * dpr);
+    const g = c.getContext('2d'); g.scale(dpr, dpr);
+    g.fillStyle = '#fbd98f'; g.fillRect(0, 0, W, H);                       // 연한 노란 판(단색)
+    const X = x => (M + x) * cell, Y = y => (M + y) * cell, lw = Math.max(1, cell * .017);
+    g.strokeStyle = '#5b4526'; g.lineWidth = lw; g.lineCap = 'butt'; g.beginPath();
+    for (let x = 1; x < 8; x++) { g.moveTo(X(x), Y(0)); g.lineTo(X(x), Y(9)); }
+    for (let y = 1; y < 9; y++) { g.moveTo(X(0), Y(y)); g.lineTo(X(8), Y(y)); }
+    g.moveTo(X(3), Y(0)); g.lineTo(X(5), Y(2)); g.moveTo(X(5), Y(0)); g.lineTo(X(3), Y(2));
+    g.moveTo(X(3), Y(7)); g.lineTo(X(5), Y(9)); g.moveTo(X(5), Y(7)); g.lineTo(X(3), Y(9)); g.stroke();
+    g.lineWidth = lw * 2; g.lineJoin = 'miter'; g.strokeRect(X(0), Y(0), cell * 8, cell * 9);     // 안쪽 굵은 테두리
+    g.lineWidth = lw; g.strokeRect(X(0) - cell * .2, Y(0) - cell * .2, cell * 8.4, cell * 9.4);    // 바깥 가는 테두리
+    g.fillStyle = '#5b4526';                                                 // 포·졸 자리 작은 점
+    [[1, 2], [7, 2], [1, 7], [7, 7]].concat([0, 2, 4, 6, 8].map(x => [x, 3]), [0, 2, 4, 6, 8].map(x => [x, 6])).forEach(p => { g.beginPath(); g.arc(X(p[0]), Y(p[1]), Math.max(1.6, cell * .03), 0, 6.2832); g.fill(); });
+    bg = c;
+  }
+
+  function buildSprites() {
+    sprites = {};
+    for (const side of [1, -1]) for (let t = 1; t <= 7; t++) {
+      const d = cell * SIZE[t], S = Math.ceil(d + 8), c = document.createElement('canvas');
+      c.width = c.height = Math.ceil(S * dpr); const g = c.getContext('2d'); g.scale(dpr, dpr);
+      const cx = S / 2, cy = S / 2 - d * .02, r = d / 2, ink = INK[side], th = d * .045;
+      g.lineJoin = 'round';
+      octPath(g, cx, cy + th, r); g.fillStyle = '#c9c2b0'; g.fill();                       // 말 두께(아래 옆면)
+      octPath(g, cx, cy, r); const gr = g.createLinearGradient(cx, cy - r, cx, cy + r); gr.addColorStop(0, '#ffffff'); gr.addColorStop(1, '#f2efe8');
+      g.fillStyle = gr; g.fill(); g.lineWidth = Math.max(1, d * .018); g.strokeStyle = '#aaa393'; g.stroke();
+      if (side === -1) { g.strokeStyle = ink; g.globalAlpha = .35; g.lineWidth = Math.max(1, d * .018); octPath(g, cx, cy, r * .86); g.stroke(); g.globalAlpha = 1; }
+      const gl = GLYPH[side === 1 ? 'cho' : 'han'][t];
+      g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = ink; g.strokeStyle = ink; g.lineJoin = 'round';
+      g.font = side === 1 ? `400 ${Math.round(d * (t === 1 ? .72 : (t >= 6 ? .74 : .7)))}px "JGCho","Yuji Boku","Noto Serif CJK KR",serif` : `700 ${Math.round(d * (t === 1 ? .68 : (t >= 6 ? .7 : .66)))}px "JGHan","Kaisei Opti","Noto Sans CJK KR",serif`;
+      g.fillText(gl, cx, cy + d * .035);
+      sprites[side * t] = { c, size: S, d };
+    }
+  }
+
+  function shadow(cx, cy, d, lift) {
+    const ox = d * (.02 + .12 * lift), oy = d * (.07 + .18 * lift), rad = d * (.5 + .12 * lift), a = .2 - .07 * lift;
+    const g = ctx.createRadialGradient(cx + ox, cy + oy, 0, cx + ox, cy + oy, rad);
+    g.addColorStop(0, `rgba(60,40,10,${a})`); g.addColorStop(.6, `rgba(60,40,10,${a * .5})`); g.addColorStop(1, 'rgba(60,40,10,0)');
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx + ox, cy + oy, rad, 0, 6.2832); ctx.fill();
+  }
+  function piece(p, cx, cy, scale, alpha, lift) {
+    const s = sprites[p]; if (!s) return;
+    shadow(cx, cy, s.d * scale, lift || 0);
+    ctx.globalAlpha = alpha == null ? 1 : alpha; const z = s.size * scale; ctx.drawImage(s.c, cx - z / 2, cy - z / 2, z, z); ctx.globalAlpha = 1;
+  }
+  const ease = p => (p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
+  function brackets(cx, cy, half, len, w, color, alpha) {
+    ctx.globalAlpha = alpha; ctx.strokeStyle = color; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    for (const sx of [-1, 1]) for (const sy of [-1, 1]) { ctx.beginPath(); ctx.moveTo(cx + sx * half, cy + sy * (half - len)); ctx.lineTo(cx + sx * half, cy + sy * half); ctx.lineTo(cx + sx * (half - len), cy + sy * half); ctx.stroke(); }
+    ctx.globalAlpha = 1;
+  }
+  function ring(cx, cy, r, w, color, alpha, dash) { ctx.globalAlpha = alpha; ctx.strokeStyle = color; ctx.lineWidth = w; ctx.setLineDash(dash || []); ctx.beginPath(); ctx.arc(cx, cy, r, 0, 6.2832); ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1; }
+
+  function draw(now) {
+    if (!W || !bg) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+    if (bg) ctx.drawImage(bg, 0, 0, W, H);
+    const b = st.board; if (!b) return;
+    const a = st.anim, moving = a && now < a.t0 + a.dur;
+    if (st.last) {                                                   // 마지막 수 표시
+      const [fx, fy] = pos(st.last[0]), [tx, ty] = pos(st.last[1]);
+      brackets(fx, fy, cell * .5, cell * .16, cell * .035, '#1b2f94', .45); brackets(tx, ty, cell * .5, cell * .16, cell * .045, '#1b2f94', .95);
+    }
+    if (st.check >= 0) { const [x, y] = pos(st.check); ring(x, y, cell * .56, cell * .07, col.warn, .95); }
+    if (st.win) { const [x, y] = pos(st.win.idx), p = .5 + .5 * Math.sin((now - st.win.t0) / 260); const g = ctx.createRadialGradient(x, y, 0, x, y, cell * 1.2); g.addColorStop(0, `rgba(255,214,90,${.45 + .2 * p})`); g.addColorStop(1, 'rgba(255,214,90,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, cell * 1.2, 0, 6.2832); ctx.fill(); ring(x, y, cell * .6, cell * .07, '#f3b72a', .95); }
+    if (st.sel >= 0) { const [x, y] = pos(st.sel); brackets(x, y, cell * .5, cell * .17, cell * .05, '#1553d6', 1); }
+    for (const d of st.dests) {                                       // 둘 수 있는 곳
+      const [x, y] = pos(d);
+      if (b[d]) ring(x, y, cell * .44, cell * .05, '#d62218', 1);
+      else { ctx.fillStyle = '#1553d6'; ctx.beginPath(); ctx.arc(x, y, cell * .09, 0, 6.2832); ctx.fill(); }
+    }
+    for (let i = 0; i < 90; i++) {                                    // 말
+      const p = b[i]; if (!p) continue; if (a && i === a.to && (moving || now < a.t0 + a.dur + a.land)) continue;
+      const [x, y] = pos(i); const sel = i === st.sel; piece(p, x, y - (sel ? cell * .05 : 0), sel ? 1.07 : 1, 1, sel ? .7 : 0);
+    }
+    if (a) {
+      const [tx, ty] = pos(a.to), [fx, fy] = pos(a.from), el = now - a.t0;
+      if (a.cap && el < a.dur + 40) { const q = clamp((el / a.dur - .45) / .55, 0, 1); piece(a.cap, tx, ty, 1 - .4 * q, 1 - q, 0); }
+      if (el < a.dur) {
+        const p = ease(clamp(el / a.dur, 0, 1)), lift = Math.sin(Math.PI * p);
+        piece(a.piece, fx + (tx - fx) * p, fy + (ty - fy) * p - lift * cell * .14, 1 + .14 * lift, 1, lift);
+      } else if (el < a.dur + a.land) {
+        const q = (el - a.dur) / a.land; piece(a.piece, tx, ty, 1 + .07 * Math.sin(Math.PI * q), 1, 0);
+        const e = (el - a.dur) / 320; if (e < 1) ring(tx, ty, cell * (.3 + .5 * e), cell * .05 * (1 - e), 'rgb(70,40,12)', .28 * (1 - e));
+      } else if (el < a.dur + 320) { const e = (el - a.dur) / 320; piece(a.piece, tx, ty, 1, 1, 0); ring(tx, ty, cell * (.3 + .5 * e), cell * .05 * (1 - e), 'rgb(70,40,12)', .28 * (1 - e)); }
+      else st.anim = null;
+    }
+    if (st.preview >= 0 && st.sel >= 0) {                              // 미리보기(손가락은 한 번 더 누르면 확정)
+      const [x, y] = pos(st.preview), [sx, sy] = pos(st.sel), p = b[st.sel];
+      brackets(x, y, cell * .5, cell * .2, cell * .09, '#0b5be0', 1); if (p) { ctx.globalAlpha = .55; const s = sprites[p]; ctx.drawImage(s.c, x - s.size / 2, y - s.size / 2, s.size, s.size); ctx.globalAlpha = 1; }
+    }
+    if (st.flash) {                                                    // 장군 신호
+      const e = (now - st.flash.t0) / 900;
+      if (e < 1) { const [x, y] = pos(st.flash.idx); for (let k = 0; k < 2; k++) { const q = clamp(e * 1.4 - k * .35, 0, 1); if (q > 0 && q < 1) ring(x, y, cell * (.5 + 1.0 * q), cell * .08 * (1 - q), col.warn, 1 - q); } } else st.flash = null;
+    }
+    drawParts(now);
+  }
+
+  function drawParts(now) {
+    const dt = Math.min(48, now - (st.lastT || now)); st.lastT = now;
+    if (st.win && !st.win.stopped && !reduced()) {
+      const el = now - st.win.t0; if (el > 3000) st.win.stopped = true;
+      else { const [x, y] = pos(st.win.idx); const n = Math.min(300 - st.parts.length, Math.round(dt / 16 * 4)); for (let i = 0; i < n; i++) { const ang = -Math.PI / 2 + (Math.random() - .5) * 1.7, sp = cell * (.8 + Math.random() * 2.1) / 1000; st.parts.push({ x: x + (Math.random() - .5) * cell * .5, y, vx: Math.cos(ang) * sp * 1.1, vy: Math.sin(ang) * sp, life: 0, max: 900 + Math.random() * 900, s: 2 + Math.random() * 3.2, g: 200 + (Math.random() * 40 | 0), b: 60 + (Math.random() * 90 | 0) }); } }
+    }
+    for (let i = st.parts.length - 1; i >= 0; i--) {
+      const q = st.parts[i]; q.life += dt; q.x += q.vx * dt; q.y += q.vy * dt; q.vy += cell * .0000009 * dt * 16;
+      if (q.life > q.max || q.x < -10 || q.x > W + 10 || q.y < -10 || q.y > H + 10) { st.parts.splice(i, 1); continue; }
+      const al = 1 - q.life / q.max; ctx.globalAlpha = al; ctx.fillStyle = `rgb(255,${q.g},${q.b})`; ctx.beginPath(); ctx.arc(q.x, q.y, q.s * (.6 + .4 * al), 0, 6.2832); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function active(now) {
+    const a = st.anim; if (a && now < a.t0 + a.dur + 340) return true;
+    if (st.flash && now < st.flash.t0 + 900) return true;
+    if (st.parts.length) return true; if (st.win && !reduced()) return true; return false;
+  }
+  function frame(now) { raf = 0; draw(now); if (active(now)) raf = requestAnimationFrame(frame); else st.lastT = 0; }
+  function invalidate() { if (!raf) raf = requestAnimationFrame(frame); }
+
+  return {
+    fit, rebuild, invalidate, themeColors,
+    get cell() { return cell; }, get stat() { return st; },
+    set(o) { Object.assign(st, o); invalidate(); },
+    animate(from, to, p, cap) {
+      if (reduced()) { st.anim = null; invalidate(); return; }
+      st.anim = { from, to, piece: p, cap: cap || 0, t0: performance.now(), dur: 220, land: 140 }; invalidate();
+    },
+    flashCheck(idx) { if (reduced()) return; st.flash = { idx, t0: performance.now() }; invalidate(); },
+    celebrate(idx) { st.win = { idx, t0: performance.now() }; st.parts = []; invalidate(); },
+    clearFx() { st.win = null; st.parts = []; st.flash = null; st.anim = null; invalidate(); },
+    cellAt(cx, cy) {
+      const r = cv.getBoundingClientRect(); const gx = Math.round((cx - r.left) / cell - M), gy = Math.round((cy - r.top) / cell - M);
+      if (gx < 0 || gx > 8 || gy < 0 || gy > 9) return -1; const x = st.flip ? 8 - gx : gx, y = st.flip ? 9 - gy : gy; return y * 9 + x;
+    },
+    center(i) { const p = pos(i); return { x: p[0], y: p[1] }; }
+  };
+})();
+
+/* ===== 대국 모델: 혼자하기와 온라인이 같은 G를 써요 ===== */
+const G = {
+  mode: null,            // 'solo' | 'online'
+  su: [0, 0], tokens: [], status: 'waiting', winner: null, reason: '', score: null,
+  me: null, names: { cho: '', han: '' }, present: { cho: true, han: true },
+  limit: 0, turnAt: 0, an: null, offer: null, rematch: {}, host: false, allowUndo: true,
+  thinking: false, resultAt: 0, replayAt: null, roomName: '', code: '', isPrivate: false, spectators: 0, level: 1, seatSu: [0, 0], note: null
+};
+const Solo = { token: 0, msg: 0, worker: null, workerUrl: null };
+let selIdx = -1, dests = [], prevIdx = -1, pending = false;
+let wake = null, timeoutKey = '', tickSec = -1;
+
+const serverNow = () => Date.now() + (typeof FB !== 'undefined' ? FB.offset || 0 : 0);
+const turnSide = () => (G.an ? (G.an.turn === J.CHO ? 'cho' : 'han') : 'cho');
+const encode = ts => ts.join(',');
+const decode = s => (s ? String(s).split(',').filter(x => x !== '').map(Number) : []);
+const ended = () => G.status === 'ended';
+const myTurn = () => G.status === 'playing' && G.me && G.me === turnSide() && !G.replayAt && !G.thinking && !ended() && !G.offer;
+function recompute() { G.an = J.analyze(G.su[0], G.su[1], G.tokens); }
+function boardAt(n) { return n == null || n >= G.tokens.length ? G.an.board : J.analyze(G.su[0], G.su[1], G.tokens.slice(0, n)).board; }
+const kingIdx = side => J.findKing(G.an.board, sideNum(side));
+function scoreNow() { return J.score(G.an.board); }
+const fmtScore = s => `초 ${s.cho}점 : 한 ${s.han}점`;
+
+/* ----- 화면에 반영 (판 + 패널) ----- */
+function syncBoard(opt) {
+  opt = opt || {};
+  const n = G.replayAt != null ? G.replayAt : G.tokens.length;
+  const an = G.replayAt != null ? J.analyze(G.su[0], G.su[1], G.tokens.slice(0, n)) : G.an;
+  const lastTok = n ? G.tokens[n - 1] : null;
+  const last = lastTok != null && lastTok !== J.PASS ? [lastTok >> 7, lastTok & 127] : null;
+  let chk = -1;
+  if (G.status !== 'waiting' && an.check && !(G.status === 'ended' && G.reason !== 'checkmate')) chk = J.findKing(an.board, an.turn);
+  const dd = G.replayAt != null || !myTurn() ? [] : dests;
+  R.set({ board: an.board, flip: G.me === 'han', last, check: chk, sel: G.replayAt != null || !myTurn() ? -1 : selIdx, dests: dd, preview: prevIdx });
+}
+function clearSel() { selIdx = -1; dests = []; prevIdx = -1; }
+function selectPiece(i) {
+  selIdx = i; prevIdx = -1; const side = sideNum(G.me);
+  dests = J.legalMoves(G.an.board, side).filter(m => (m >> 7) === i).map(m => m & 127);
+}
+
+/* ----- 새 수/상태 변화가 생겼을 때: 소리·움직임·효과 ----- */
+function onTokensChanged(oldTokens, wasEnded) {
+  const n = G.tokens.length, o = oldTokens.length;
+  clearSel(); pending = false;
+  if (n === o + 1 && G.replayAt == null) {
+    const t = G.tokens[n - 1], before = J.analyze(G.su[0], G.su[1], G.tokens.slice(0, n - 1)).board;
+    if (t !== J.PASS) {
+      const f = t >> 7, to = t & 127, cap = before[to]; R.animate(f, to, before[f], cap);
+      Snd.play(cap ? 'capture' : 'place');
+      if (G.an.check && !G.an.ended) { Snd.play('check'); Snd.buzz(40); flashText('장군!'); R.flashCheck(J.findKing(G.an.board, G.an.turn)); }
+    } else toast(`${SIDE_NAME[other(turnSide())]}이(가) 한 수 쉬었어요`);
+  }
+}
+function flashText(t, gold) {
+  const f = $('#flash'); f.hidden = true; f.className = 'flash' + (gold ? ' gold' : ''); f.textContent = t; void f.offsetWidth; f.hidden = false;
+  clearTimeout(flashText.t); flashText.t = setTimeout(() => { f.hidden = true; }, 950);
+}
+function endEffects() {                      // 끝나는 순간을 직접 본 경우에만
+  if (!G.winner) return;
+  const rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  G.resultAt = rm ? 0 : Date.now() + 1000; setTimeout(() => { if (G.mode) renderOverlay(); }, rm ? 0 : 1020);
+  const win = G.winner === 'draw' ? null : G.winner, iWon = win && win === G.me, spectator = !G.me;
+  if (win) { const k = J.findKing(G.an.board, sideNum(win)); if (iWon || spectator) { R.celebrate(k); flashText(G.reason === 'checkmate' ? '외통!' : '승리', true); } }
+  Snd.play(iWon ? 'win' : (win && G.me ? 'lose' : 'join')); if (iWon) Snd.buzz([40, 40, 60]);
+}
+
+/* ================= 혼자하기 ================= */
+function aiWorker() {
+  if (Solo.worker) return Solo.worker;
+  try {
+    const src = $('#engineSrc') ? $('#engineSrc').textContent : null;
+    const code = (src || '') + '\nself.onmessage=function(e){var d=e.data;var r=Janggi.chooseMove(d.board,d.side,{level:d.level,seen:new Set(d.seen)});self.postMessage({id:d.id,move:r.move,info:r.info});};';
+    Solo.workerUrl = URL.createObjectURL(new Blob([code], { type: 'text/javascript' }));
+    Solo.worker = new Worker(Solo.workerUrl);
+    Solo.worker.onerror = () => { Solo.worker = null; };
+  } catch (e) { Solo.worker = null; }
+  return Solo.worker;
+}
+function aiChoose(board, side, level, seen) {
+  return new Promise(res => {
+    const w = aiWorker(), id = ++Solo.msg;
+    if (w) {
+      const h = e => { if (e.data.id !== id) return; w.removeEventListener('message', h); res(e.data); };
+      w.addEventListener('message', h); w.postMessage({ id, board: Array.from(board), side, level, seen: Array.from(seen) });
+    } else setTimeout(() => { const r = J.chooseMove(board, side, { level, seen }); res({ move: r.move, info: r.info }); }, 30);
+  });
+}
+function seenKeys() {
+  const out = []; const from = Math.max(0, G.tokens.length - 40);
+  for (let n = from; n <= G.tokens.length; n++) { const a = J.analyze(G.su[0], G.su[1], G.tokens.slice(0, n)); out.push(J.posKey(a.board, a.turn)); }
+  return out;
+}
+function startSolo() {
+  Solo.token++; G.mode = 'solo'; G.level = SET.level; G.replayAt = null; G.offer = null; G.note = null; G.rematch = {};
+  const me = SET.side === 'random' ? (Math.random() < .5 ? 'cho' : 'han') : SET.side, ai = other(me);
+  G.resultAt = 0; G.me = me; G.su = [0, 0]; G.tokens = []; G.status = 'playing'; G.winner = null; G.reason = ''; G.score = null;
+  G.names = { cho: me === 'cho' ? SET.nick : '컴퓨터', han: me === 'han' ? SET.nick : '컴퓨터' };
+  G.present = { cho: true, han: true }; G.limit = SET.limitOn ? SOLO_LIMITS[SET.level] : 0; G.turnAt = Date.now();
+  G.roomName = '컴퓨터와 한 판'; G.code = ''; G.host = true; G.allowUndo = true; G.thinking = false; timeoutKey = '';
+  recompute(); clearSel(); R.clearFx();
+  showGame(); maybeAi();
+}
+function maybeAi() {
+  if (G.mode !== 'solo' || G.status !== 'playing' || G.replayAt != null) return;
+  if (turnSide() === G.me) return;
+  G.thinking = true; const tk = ++Solo.token, t0 = Date.now(); renderGame();
+  aiChoose(G.an.board, G.an.turn, G.level, new Set(seenKeys())).then(async r => {
+    const wait = AI_MIN_THINK_MS - (Date.now() - t0); if (wait > 0) await sleep(wait);
+    if (tk !== Solo.token || G.mode !== 'solo' || G.status !== 'playing') return;
+    G.thinking = false; applySolo(r.move);
+  });
+}
+function applySolo(tok) {
+  const old = G.tokens.slice(); G.tokens.push(tok); recompute(); G.turnAt = Date.now(); timeoutKey = '';
+  onTokensChanged(old);
+  if (G.an.ended) soloEnd(G.an.ended.winner, G.an.ended.reason, G.an.ended.score);
+  renderGame(); if (G.status === 'playing') maybeAi();
+}
+function soloEnd(winner, reason, score) {
+  G.status = 'ended'; G.winner = winner; G.reason = reason; G.score = score || null; G.thinking = false; Solo.token++; clearSel();
+  endEffects(); syncBoard(); renderGame();
+}
+
+/* ================= 공통 행동 (혼자하기/온라인을 나눠서 처리) ================= */
+const Act = {
+  move(from, to) {
+    const tok = (from << 7) | to;
+    if (G.mode === 'solo') { pending = false; applySolo(tok); } else Online.move(tok);
+  },
+  pass() {
+    if (!myTurn()) return;
+    if (!J.canPass(G.an.board, sideNum(G.me))) { toast('장군을 받은 상태에서는 쉴 수 없어요'); Snd.play('error'); return; }
+    const bik = G.an.bikjang;
+    const go = () => { if (G.mode === 'solo') applySolo(J.PASS); else Online.move(J.PASS); };
+    if (bik) confirmBox('빅장에서 쉬어요', '빅장에서 쉬면 지금 점수로 승패가 정해져요.\n' + fmtScore(scoreNow()), '쉬기', true).then(ok => ok && go()); else go();
+  },
+  async resign() {
+    if (!(await confirmBox('기권할까요?', '기권하면 바로 패배해요.', '기권하기', true))) return;
+    if (G.mode === 'solo') soloEnd(other(G.me), 'resign'); else Online.resign();
+  },
+  async undo() {
+    if (G.status !== 'playing') return;
+    const mine = G.me === 'cho' ? 1 : 2; if (G.tokens.length < mine) { toast('아직 무를 수가 없어요'); return; }
+    if (G.mode === 'solo') {
+      if (G.thinking) { toast('컴퓨터가 두고 나면 무를 수 있어요'); return; }
+      const n = turnSide() === G.me ? 2 : 1, keep = G.tokens.length - n; if (keep < (G.me === 'cho' ? 0 : 1)) { toast('더 이상 무를 수 없어요'); return; }
+      G.tokens = G.tokens.slice(0, keep); recompute(); G.turnAt = Date.now(); clearSel(); R.clearFx(); syncBoard(); renderGame(); maybeAi();
+    } else { if (!G.allowUndo) { toast('이 방은 무르기를 쓸 수 없어요'); return; } Online.offer('undo'); }
+  },
+  async offerCount() {
+    const s = scoreNow(); const ok = await confirmBox('점수로 끝낼까요?', '지금 점수로 승패를 정해요.\n' + fmtScore(s) + (G.mode === 'online' ? '\n상대가 동의하면 끝나요.' : ''), '제안하기');
+    if (!ok) return;
+    if (G.mode === 'solo') {
+      const mine = G.me === 'cho' ? s.cho : s.han, theirs = G.me === 'cho' ? s.han : s.cho;
+      if (theirs > mine) soloEnd(other(G.me), 'count', s); else if (mine > theirs) toast('컴퓨터가 거절했어요. 점수가 뒤지고 있어서 더 두고 싶대요'); 
+    } else Online.offer('count');
+  },
+  async offerDraw() {
+    const ok = await confirmBox('비기자고 할까요?', G.mode === 'online' ? '상대가 동의하면 무승부로 끝나요.' : '컴퓨터가 점수를 보고 대답해요.', '제안하기');
+    if (!ok) return;
+    if (G.mode === 'solo') {
+      const s = scoreNow(), mine = G.me === 'cho' ? s.cho : s.han, theirs = G.me === 'cho' ? s.han : s.cho;
+      if (theirs <= mine) soloEnd('draw', 'agree'); else toast('컴퓨터가 거절했어요. 지금은 앞서고 있어서 더 두고 싶대요');
+    } else Online.offer('draw');
+  },
+  rematch() { if (G.mode === 'solo') startSolo(); else Online.rematch(); },
+  leave() { return leaveGame(); }
+};
+
+/* ================= 보드 입력 (손가락 / S Pen / 마우스) ================= */
+const Input = (() => {
+  const cv = $('#cv');
+  const hover = e => {
+    if (e.pointerType === 'touch' || !myTurn() || selIdx < 0) return;
+    const i = R.cellAt(e.clientX, e.clientY), want = dests.indexOf(i) >= 0 ? i : -1;
+    if (want !== prevIdx) { prevIdx = want; syncBoard(); }
+  };
+  cv.addEventListener('pointermove', e => { if (e.isPrimary) hover(e); });
+  cv.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch' && prevIdx >= 0) { prevIdx = -1; syncBoard(); } });
+  cv.addEventListener('pointerdown', e => {
+    if (!e.isPrimary) { clearSel(); syncBoard(); return; }          // 두 손가락 이상은 무시(첫 손가락만 인정)
+    if (!myTurn() || pending) return;
+    const i = R.cellAt(e.clientX, e.clientY); if (i < 0) { clearSel(); syncBoard(); return; }
+    const b = G.an.board, p = b[i], mine = p && (p > 0) === (G.me === 'cho');
+    if (mine) { if (selIdx === i) clearSel(); else selectPiece(i); syncBoard(); return; }
+    if (selIdx >= 0 && dests.indexOf(i) >= 0) {
+      const fine = e.pointerType === 'pen' || e.pointerType === 'mouse' || SET.oneTap;
+      if (fine || prevIdx === i) { const f = selIdx; pending = true; clearSel(); R.set({ sel: -1, dests: [], preview: -1 }); Act.move(f, i); }
+      else { prevIdx = i; syncBoard(); }
+      return;
+    }
+    clearSel(); syncBoard();
+  });
+  cv.addEventListener('contextmenu', e => e.preventDefault());
+})();
+
+/* ================= 시간 (한 수당 제한) ================= */
+function remaining() {
+  if (G.status !== 'playing' || !G.limit) return null;
+  const now = G.mode === 'online' ? serverNow() : Date.now();
+  return Math.max(0, G.limit - (now - G.turnAt) / 1000);
+}
+function clockTick() {
+  if (G.status !== 'playing') { tickSec = -1; return; }
+  const rem = remaining(); renderClocks();
+  if (rem == null) return;
+  const ts = turnSide();
+  if (G.me === ts && rem <= 10 && rem > 0) { const s = Math.ceil(rem); if (s !== tickSec) { tickSec = s; Snd.play('tick'); } } else if (G.me !== ts) tickSec = -1;
+  if (rem <= 0) {
+    const key = G.code + ':' + G.tokens.length + ':' + G.turnAt;
+    if (timeoutKey === key) return; timeoutKey = key;
+    if (G.mode === 'solo') { if (ts === G.me) soloEnd(other(G.me), 'time'); }
+    else if (G.me) setTimeout(() => Online.timeout(), 150 + Math.random() * 500);
+  }
+}
+setInterval(clockTick, 250);
+
+/* ================= 화면 꺼짐 방지 ================= */
+async function wakeOn() {
+  try { if ('wakeLock' in navigator && !wake) { wake = await navigator.wakeLock.request('screen'); wake.addEventListener('release', () => { wake = null; }); } } catch (e) { wake = null; }
+}
+function wakeOff() { try { if (wake) wake.release(); } catch (e) {} wake = null; }
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && $('#app').dataset.screen === 'game') { wakeOn(); if (G.mode === 'online') Online.resync(); clockTick(); }
+});
+
+/* ===== 온라인 대전 (Firebase Hosting + Realtime Database + 익명 로그인) ===== */
+const FB = { state: 'check', err: null, api: null, db: null, uid: null, offset: 0, connected: false };
+const Online = { code: '', room: null, unsub: null, lobbyUnsub: null, rooms: [], lastSeats: {}, lastNote: 0, joining: false };
+const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+const mkErr = (code, e) => ({ code, e });
+
+async function fbInit() {
+  FB.state = 'check'; FB.err = null; renderConn();
+  try {
+    if (location.protocol === 'file:') throw mkErr('file');
+    const cfg = (typeof firebaseConfig !== 'undefined') ? firebaseConfig : null;
+    if (!cfg || !cfg.apiKey || /YOUR_/.test(cfg.apiKey)) throw mkErr('noconfig');
+    if (!cfg.databaseURL || /YOUR_/.test(cfg.databaseURL)) throw mkErr('nodburl');
+    const base = 'https://www.gstatic.com/firebasejs/' + FB_VERSION + '/';
+    let A, Au, D;
+    try { [A, Au, D] = await Promise.all([import(base + 'firebase-app.js'), import(base + 'firebase-auth.js'), import(base + 'firebase-database.js')]); }
+    catch (e) { throw mkErr('sdk', e); }
+    const app = A.initializeApp(cfg), auth = Au.getAuth(app);
+    try { const cred = await Au.signInAnonymously(auth); FB.uid = cred.user.uid; } catch (e) { throw mkErr('auth', e); }
+    FB.db = D.getDatabase(app); FB.api = D;
+    D.onValue(D.ref(FB.db, '.info/serverTimeOffset'), s => { FB.offset = s.val() || 0; });
+    let timer = setTimeout(() => { if (!FB.connected && FB.state !== 'ok') { FB.state = 'error'; FB.err = mkErr('timeout'); renderConn(); renderOnlinePanel(); } }, 9000);
+    D.onValue(D.ref(FB.db, '.info/connected'), s => {
+      FB.connected = !!s.val();
+      if (FB.connected) { clearTimeout(timer); const was = FB.state; FB.state = 'ok'; FB.err = null; renderConn(); if (was !== 'ok') renderOnlinePanel(); if (Online.code) setPresence(Online.code); if ($('#app').dataset.screen === 'home') Online.listenLobby(); }
+      else if (FB.state === 'ok') { FB.state = 'check'; renderConn(); }
+    });
+  } catch (e) { FB.state = 'error'; FB.err = e && e.code ? e : mkErr('unknown', e); renderConn(); renderOnlinePanel(); }
+}
+function explain(err) {
+  const c = err && err.code, ec = err && err.e && (err.e.code || '');
+  const M = {
+    file: ['파일을 직접 열었어요', '온라인은 인터넷 주소(https://…web.app)로 열어야 해요. 배포 후 나오는 주소로 접속해 주세요. 혼자하기는 지금도 할 수 있어요.'],
+    noconfig: ['Firebase 설정이 아직 없어요', '이 게임 폴더의 public/config.js 에 Firebase 콘솔의 firebaseConfig를 붙여넣고 다시 배포해 주세요. 혼자하기는 지금도 할 수 있어요.'],
+    nodburl: ['databaseURL이 비어 있어요', 'Firebase 콘솔 → Realtime Database 화면 위쪽의 주소(https://…firebasedatabase.app)를 config.js 의 databaseURL 에 넣고 다시 배포해 주세요.'],
+    sdk: ['Firebase 라이브러리를 불러오지 못했어요', '인터넷 연결을 확인해 주세요. 학교 Wi-Fi가 막았을 수 있어요. 휴대폰 데이터로 접속해서 되는지 확인해 보세요.'],
+    timeout: ['서버에 연결되지 않아요', 'config.js 의 databaseURL이 맞는지 확인하고, 학교 Wi-Fi라면 휴대폰 데이터로 접속해 보세요.'],
+    perm: ['데이터베이스 규칙이 올라가지 않았어요', '게임 폴더에서 firebase deploy 를 다시 실행해 주세요. (database.rules.json 이 함께 올라가요)'],
+    unknown: ['온라인에 연결하지 못했어요', '잠시 뒤 다시 시도해 주세요. 계속되면 README의 문제 해결표를 확인해 주세요.']
+  };
+  if (c === 'auth') {
+    if (/operation-not-allowed|admin-restricted/.test(ec)) return ['익명 로그인이 꺼져 있어요', 'Firebase 콘솔 → Authentication → 로그인 방법 → 익명 → 사용 설정을 켜 주세요.'];
+    if (/unauthorized-domain/.test(ec)) return ['이 주소가 승인되지 않았어요', 'Firebase 콘솔 → Authentication → 설정 → 승인된 도메인에 지금 접속한 주소를 추가해 주세요.'];
+    if (/network/.test(ec)) return ['네트워크에 연결되지 않아요', '인터넷 연결을 확인해 주세요. 학교 Wi-Fi라면 휴대폰 데이터로 접속해 보세요.'];
+    if (/api-key/.test(ec)) return ['apiKey가 올바르지 않아요', 'config.js 의 firebaseConfig를 콘솔에서 다시 복사해 붙여넣어 주세요.'];
+    return ['익명 로그인에 실패했어요', '오류 코드: ' + (ec || '알 수 없음') + ' — config.js 와 Authentication 설정을 확인해 주세요.'];
+  }
+  return M[c] || M.unknown;
+}
+function dbFail(e) {
+  const m = String((e && (e.code || e.message)) || ''); if (/permission/i.test(m)) { FB.state = 'error'; FB.err = mkErr('perm'); renderConn(); renderOnlinePanel(); }
+  else toast('서버와 통신이 잘 안 돼요. 잠시 뒤 다시 해 보세요');
+}
+const fbReady = () => FB.state === 'ok' && FB.api;
+const roomRef = code => FB.api.ref(FB.db, 'rooms/' + code);
+const TS = () => FB.api.serverTimestamp();
+
+/* ----- 안전한 트랜잭션 (차례·합법성은 항상 안에서 다시 확인해요) ----- */
+async function tx(code, fn) {
+  try {
+    const res = await FB.api.runTransaction(roomRef(code), cur => {
+      if (cur === null) return cur;
+      return fn(JSON.parse(JSON.stringify(cur)));
+    });
+    return !!res.committed;
+  } catch (e) { dbFail(e); return false; }
+}
+const seatOf = (room, uid) => (room.seats && room.seats.cho && room.seats.cho.uid === uid ? 'cho' : room.seats && room.seats.han && room.seats.han.uid === uid ? 'han' : null);
+const suPair = g => [+String(g.su)[0] || 0, +String(g.su)[1] || 0];
+const presentIn = (room, uid) => !!(room.presence && room.presence[uid]);
+function clearGameFields(c) { delete c.game; delete c.winner; delete c.reason; delete c.score; delete c.offer; delete c.rematch; delete c.note; }
+function startGameMut(c, ts) {
+  const s = c.seats || {}; c.status = 'playing'; clearGameFields(c);
+  c.game = { su: String((s.cho && s.cho.su) || 0) + String((s.han && s.han.su) || 0), moves: '', turnAt: ts };
+}
+function endMut(c, winner, reason, score) { c.status = 'ended'; c.winner = winner; c.reason = reason; if (score) c.score = score; delete c.offer; }
+
+const Mut = {
+  seatMe(c, uid, name) {
+    const seats = c.seats || {}, mine = seatOf(c, uid);
+    if (mine) { if (seats[mine].name === name) return undefined; seats[mine].name = name; c.seats = seats; return c; }
+    const free = s => !seats[s] || (c.status !== 'playing' && !presentIn(c, seats[s].uid));
+    const side = ['cho', 'han'].find(free); if (!side) return undefined;
+    if (c.status === 'ended') { clearGameFields(c); c.status = 'waiting'; }
+    seats[side] = { uid, name, su: 0 }; c.seats = seats;
+    if (!c.host || !seatOf(c, c.host)) c.host = uid;
+    return c;
+  },
+  leave(c, uid) {
+    const side = seatOf(c, uid); if (!side) return undefined;
+    if (c.status === 'playing') endMut(c, other(side), 'leave');
+    delete c.seats[side]; delete c.rematch;
+    if (c.host === uid) { const o = c.seats.cho || c.seats.han; c.host = o ? o.uid : null; }
+    return c;
+  },
+  start(c, uid, ts) {
+    const s = c.seats || {}; if (c.host !== uid || c.status !== 'waiting' || !s.cho || !s.han) return undefined;
+    startGameMut(c, ts); return c;
+  },
+  move(c, uid, tok, ts, now) {
+    if (c.status !== 'playing' || !c.game) return undefined;
+    const side = seatOf(c, uid), g = c.game, su = suPair(g), toks = decode(g.moves), an = J.analyze(su[0], su[1], toks);
+    if (!side || an.ended) return undefined; if (side !== (an.turn === J.CHO ? 'cho' : 'han')) return undefined;
+    if (c.limit && now >= g.turnAt + c.limit * 1000) return undefined;
+    if (!J.isLegalToken(an.board, an.turn, tok)) return undefined;
+    toks.push(tok); const a2 = J.analyze(su[0], su[1], toks); g.moves = encode(toks); g.turnAt = ts; delete c.offer;
+    if (a2.ended) endMut(c, a2.ended.winner, a2.ended.reason, a2.ended.score); return c;
+  },
+  resign(c, uid) { const side = seatOf(c, uid); if (!side || c.status !== 'playing') return undefined; endMut(c, other(side), 'resign'); return c; },
+  timeout(c, uid, now) {
+    if (c.status !== 'playing' || !c.game || !c.limit || !seatOf(c, uid)) return undefined;
+    const g = c.game, su = suPair(g), an = J.analyze(su[0], su[1], decode(g.moves)); if (an.ended || now < g.turnAt + c.limit * 1000) return undefined;
+    endMut(c, an.turn === J.CHO ? 'han' : 'cho', 'time'); return c;
+  },
+  offer(c, uid, type, ts) {
+    const side = seatOf(c, uid); if (!side || c.status !== 'playing' || c.offer) return undefined;
+    if (type === 'undo') { if (c.allowUndo === false) return undefined; const n = decode(c.game.moves).length; if (n < (side === 'cho' ? 1 : 2)) return undefined; }
+    c.offer = { type, from: side, at: ts }; return c;
+  },
+  cancelOffer(c, uid) { const side = seatOf(c, uid); if (!side || !c.offer || c.offer.from !== side) return undefined; delete c.offer; return c; },
+  respond(c, uid, accept, ts) {
+    const side = seatOf(c, uid), o = c.offer; if (!side || !o || o.from === side || c.status !== 'playing') return undefined;
+    const g = c.game, su = suPair(g), toks = decode(g.moves);
+    if (!accept) { delete c.offer; c.note = { k: 'declined', type: o.type, by: side, at: ts }; return c; }
+    if (o.type === 'draw') { endMut(c, 'draw', 'agree'); return c; }
+    if (o.type === 'count') { const a = J.analyze(su[0], su[1], toks), s = J.score(a.board); endMut(c, s.cho > s.han ? 'cho' : 'han', 'count', s); return c; }
+    if (o.type === 'undo') {
+      const turn = toks.length % 2 === 0 ? 'cho' : 'han', n = turn === o.from ? 2 : 1; if (toks.length < n) { delete c.offer; return c; }
+      g.moves = encode(toks.slice(0, toks.length - n)); g.turnAt = ts; delete c.offer; return c;
+    }
+    return undefined;
+  },
+  rematch(c, uid, ts) {
+    const side = seatOf(c, uid), s = c.seats || {}; if (!side || c.status !== 'ended' || !s.cho || !s.han) return undefined;
+    const r = c.rematch || {}; r[side] = true; c.rematch = r;
+    if (r.cho && r.han) { const a = s.cho; s.cho = s.han; s.han = a; c.seats = s; startGameMut(c, ts); }
+    return c;
+  }
+};
+
+/* ----- 입장 표시(presence) ----- */
+function setPresence(code) {
+  if (!fbReady() || !code) return; const { ref, set, onDisconnect } = FB.api, pr = ref(FB.db, `rooms/${code}/presence/${FB.uid}`);
+  try { onDisconnect(pr).remove(); set(pr, { name: SET.nick, t: TS() }).catch(dbFail); } catch (e) { dbFail(e); }
+}
+function dropPresence(code) { if (!fbReady() || !code) return; try { FB.api.remove(FB.api.ref(FB.db, `rooms/${code}/presence/${FB.uid}`)); } catch (e) {} }
+
+/* ----- 로비 ----- */
+Online.listenLobby = function () {
+  if (!fbReady() || Online.lobbyUnsub) return; const { ref, query, orderByChild, limitToLast, onValue } = FB.api;
+  try {
+    Online.lobbyUnsub = onValue(query(ref(FB.db, 'rooms'), orderByChild('createdAt'), limitToLast(40)), s => {
+      const v = s.val() || {}, now = serverNow(); const arr = [];
+      for (const code of Object.keys(v)) {
+        const r = v[code]; if (!r || !r.status) continue;
+        const mine = !!seatOf(r, FB.uid), people = r.presence ? Object.keys(r.presence).length : 0;
+        if (!mine && (r.isPrivate || people === 0 || r.status === 'ended' || (r.createdAt && now - r.createdAt > ROOM_HIDE_HOURS * 3600e3))) continue;
+        if (mine && (r.status === 'ended' || people === 0) && false) continue;
+        const seatsN = (r.seats && r.seats.cho ? 1 : 0) + (r.seats && r.seats.han ? 1 : 0);
+        arr.push({ code, r, mine, people, seatsN, joinable: r.status === 'waiting' && seatsN < 2 });
+      }
+      arr.sort((a, b) => (b.mine - a.mine) || (b.joinable - a.joinable) || ((b.r.createdAt || 0) - (a.r.createdAt || 0)));
+      Online.rooms = arr; renderLobby();
+    }, e => dbFail(e));
+  } catch (e) { dbFail(e); }
+};
+Online.detachLobby = function () { if (Online.lobbyUnsub) { try { Online.lobbyUnsub(); } catch (e) {} Online.lobbyUnsub = null; } };
+
+/* ----- 방 만들기 / 입장 / 나가기 ----- */
+function newCode() { let s = ''; for (let i = 0; i < 6; i++) s += CODE_CHARS[(Math.random() * CODE_CHARS.length) | 0]; return s; }
+Online.create = async function (o) {
+  if (!fbReady()) { toast('온라인에 연결되면 방을 만들 수 있어요'); return false; }
+  if (Online.joining) return false; Online.joining = true;
+  try {
+    for (let i = 0; i < 6; i++) {
+      const code = newCode();
+      const room = { name: (o.name || '').trim().slice(0, 20) || (SET.nick + '의 방'), host: FB.uid, isPrivate: !!o.isPrivate, limit: o.limit || 0, allowUndo: o.allowUndo !== false, status: 'waiting', createdAt: TS(), seats: { cho: { uid: FB.uid, name: SET.nick, su: 0 } } };
+      let ok = false;
+      try { const r = await FB.api.runTransaction(roomRef(code), cur => (cur === null ? room : undefined)); ok = r.committed; } catch (e) { dbFail(e); return false; }
+      if (ok) { await Online.attach(code); return true; }
+    }
+    toast('방을 만들지 못했어요. 다시 눌러 주세요'); return false;
+  } finally { Online.joining = false; }
+};
+Online.join = async function (code, quiet) {
+  code = String(code || '').trim().toUpperCase();
+  if (!/^[A-Z0-9]{6}$/.test(code)) { toast('방 코드는 6자리예요'); return false; }
+  if (!fbReady()) { toast('온라인에 연결되면 입장할 수 있어요'); return false; }
+  if (Online.joining) return false; Online.joining = true;
+  try {
+    if (Online.code === code) { showGame(); return true; }
+    let snap; try { snap = await FB.api.get(roomRef(code)); } catch (e) { dbFail(e); return false; }
+    if (!snap.exists()) { if (!quiet) toast('이 코드의 방을 찾을 수 없어요. 코드를 다시 확인해 주세요'); return false; }
+    await Online.attach(code, true); return true;
+  } finally { Online.joining = false; }
+};
+Online.attach = async function (code, seat) {
+  if (Online.code && Online.code !== code) await Online.leave(true);
+  Online.code = code; Online.lastSeats = {}; G.code = ''; SET.lastRoom = code; saveSet();
+  setPresence(code);
+  const first = new Promise(res => { let done = false; Online.unsub = FB.api.onValue(roomRef(code), s => { Online.onRoom(s.val()); if (!done) { done = true; res(); } }, e => { dbFail(e); if (!done) { done = true; res(); } }); });
+  await first;
+  if (seat) { const before = Online.room && seatOf(Online.room, FB.uid); await tx(code, c => Mut.seatMe(c, FB.uid, SET.nick)); const after = Online.room && seatOf(Online.room, FB.uid); if (!before && !after && Online.room) toast('자리가 없어서 관전으로 들어왔어요'); }
+};
+Online.leave = async function (quiet) {
+  const code = Online.code; if (!code) return;
+  if (Online.unsub) { try { Online.unsub(); } catch (e) {} Online.unsub = null; }
+  Online.code = ''; Online.room = null; SET.lastRoom = ''; saveSet();
+  if (fbReady()) { try { await tx(code, c => Mut.leave(c, FB.uid)); } catch (e) {} dropPresence(code); }
+  Online.lastSeats = {};
+};
+Online.resync = function () { if (Online.code) setPresence(Online.code); };
+
+/* ----- 방 상태가 바뀔 때마다 (내 화면 갱신) ----- */
+Online.onRoom = function (room) {
+  if (!Online.code) return;
+  if (!room) { toast('방이 사라졌어요'); Online.code = ''; if (Online.unsub) { try { Online.unsub(); } catch (e) {} Online.unsub = null; } goHome(); return; }
+  Online.room = room; const uid = FB.uid, me = seatOf(room, uid);
+  const first = G.mode !== 'online' || G.code !== Online.code;
+  const oldTokens = first ? [] : G.tokens.slice(), oldStatus = first ? null : G.status;
+  const seats = room.seats || {}, pres = room.presence || {};
+  G.mode = 'online'; G.code = Online.code; G.me = me; G.host = room.host === uid; G.roomName = room.name || ''; G.isPrivate = !!room.isPrivate;
+  G.names = { cho: seats.cho ? seats.cho.name : '', han: seats.han ? seats.han.name : '' };
+  G.present = { cho: !!(seats.cho && pres[seats.cho.uid]), han: !!(seats.han && pres[seats.han.uid]) };
+  G.seatSu = [(seats.cho && seats.cho.su) || 0, (seats.han && seats.han.su) || 0];
+  G.spectators = Object.keys(pres).filter(k => !(seats.cho && seats.cho.uid === k) && !(seats.han && seats.han.uid === k)).length;
+  G.status = room.status; G.limit = room.limit || 0; G.allowUndo = room.allowUndo !== false; G.thinking = false;
+  if (room.game) { G.su = suPair(room.game); G.tokens = decode(room.game.moves); G.turnAt = room.game.turnAt || serverNow(); }
+  else { G.su = G.seatSu.slice(); G.tokens = []; G.turnAt = serverNow(); }
+  G.winner = room.winner || null; G.reason = room.reason || ''; G.score = room.score || null; G.offer = room.offer || null; G.rematch = room.rematch || {};
+  if (first || (oldStatus && oldStatus !== G.status)) G.replayAt = null;
+  recompute();
+  if (first) { G.resultAt = 0; clearSel(); R.clearFx(); showGame(); }
+  else {
+    onTokensChanged(oldTokens);
+    if (G.tokens.length < oldTokens.length) { clearSel(); R.clearFx(); }
+    if (oldStatus === 'playing' && G.status === 'ended') { clearSel(); endEffects(); }
+    if (oldStatus && oldStatus !== 'playing' && G.status === 'playing') { clearSel(); R.clearFx(); timeoutKey = ''; if (G.me) { toast('게임이 시작됐어요'); Snd.play('join'); Snd.buzz(60); } }
+    if (oldStatus === 'ended' && G.status === 'waiting') R.clearFx();
+  }
+  // 상대가 들어왔을 때 방장에게 알려요
+  if (!first && G.host) for (const s of ['cho', 'han']) { const u = seats[s] && seats[s].uid; if (u && u !== uid && Online.lastSeats[s] !== u) { toast(`${seats[s].name}님이 들어왔어요`); Snd.play('join'); Snd.buzz(60); } }
+  Online.lastSeats = { cho: seats.cho && seats.cho.uid, han: seats.han && seats.han.uid };
+  if (room.note && room.note.at && room.note.at !== Online.lastNote) { Online.lastNote = room.note.at; if (!first && me && room.note.by !== me && room.note.k === 'declined') toast('상대가 제안을 거절했어요'); }
+  if (G.status === 'playing') wakeOn();
+  syncBoard(); renderGame();
+};
+
+/* ----- 행동들 (모두 트랜잭션) ----- */
+const nowTx = () => serverNow();
+Online.move = async function (tok) {
+  const ok = await tx(Online.code, c => Mut.move(c, FB.uid, tok, TS(), nowTx()));
+  pending = false; if (!ok) { toast('수를 둘 수 없었어요. 판이 바뀌었는지 확인해 주세요'); Snd.play('error'); clearSel(); syncBoard(); }
+};
+Online.start = async function () { if (!(await tx(Online.code, c => Mut.start(c, FB.uid, TS())))) toast('아직 시작할 수 없어요. 두 자리가 모두 차야 해요'); };
+Online.resign = () => tx(Online.code, c => Mut.resign(c, FB.uid));
+Online.timeout = () => tx(Online.code, c => Mut.timeout(c, FB.uid, nowTx()));
+Online.offer = async function (type) { if (!(await tx(Online.code, c => Mut.offer(c, FB.uid, type, TS())))) toast('지금은 제안할 수 없어요'); };
+Online.cancelOffer = () => tx(Online.code, c => Mut.cancelOffer(c, FB.uid));
+Online.respond = acc => tx(Online.code, c => Mut.respond(c, FB.uid, acc, TS()));
+Online.rematch = () => tx(Online.code, c => Mut.rematch(c, FB.uid, TS()));
+Online.quick = async function () {
+  if (!fbReady()) { toast('온라인에 연결되면 빠른 입장을 쓸 수 있어요'); return; }
+  const cand = Online.rooms.filter(x => x.joinable && !x.mine && x.people > 0);
+  if (cand.length) { const ok = await Online.join(cand[0].code); if (ok) return; }
+  const ok = await Online.create({ name: SET.nick + '의 방', limit: DEFAULT_ONLINE_LIMIT, allowUndo: true, isPrivate: false });
+  if (ok) toast('빈 방이 없어서 새 방을 만들었어요. 친구가 들어오길 기다려요');
+};
+
+/* ===== 화면: 홈, 대국, 대화상자 ===== */
+const LV_DESC = ['처음 배우는 사람에게', '적당히 겨뤄요', '꽤 매서워요'];
+const glyphHtml = (side, t) => GLYPH[side][t];
+const octHtml = (side, t, cls) => `<span class="oct ${side} ${cls || ''}"><b>${glyphHtml(side, t)}</b></span>`;
+const fmtLimit = s => (s ? `한 수 ${s}초` : '시간 제한 없음');
+const fmtT = s => { s = Math.ceil(s); return s >= 60 ? `${(s / 60) | 0}:${String(s % 60).padStart(2, '0')}` : `${s}초`; };
+
+/* ---------- 홈 ---------- */
+function renderHome() { renderSolo(); renderOnlinePanel(); Snd.refresh(); }
+function renderConn() {
+  const c = $('#conn'), s = FB.state; c.dataset.s = s === 'ok' ? 'ok' : s === 'error' ? 'error' : 'check';
+  $('b', c).textContent = s === 'ok' ? '온라인 연결됨' : s === 'error' ? '온라인 연결 안 됨' : '연결 확인 중';
+}
+function renderSolo() {
+  const p = $('#panelSolo'), lv = SET.level, lim = SOLO_LIMITS[lv];
+  p.innerHTML = `<h2>컴퓨터와 한 판</h2><div class="stack">
+  <div><span class="lbl">컴퓨터 실력</span><div class="tiles c3" role="radiogroup" aria-label="컴퓨터 실력">
+    ${J.LEVELS.map((L, i) => `<button class="tile" role="radio" aria-checked="${lv === i}" data-lv="${i}"><b>${L.name}</b><small>${LV_DESC[i]}</small><small>내 시간 ${SOLO_LIMITS[i]}초</small></button>`).join('')}
+  </div></div>
+  <div><span class="lbl">내 편</span><div class="tiles c3" role="radiogroup" aria-label="내 편">
+    <button class="tile" role="radio" aria-checked="${SET.side === 'cho'}" data-side="cho">${octHtml('cho', 1, 'sm')}<b>초</b><small>먼저 둬요</small></button>
+    <button class="tile" role="radio" aria-checked="${SET.side === 'han'}" data-side="han">${octHtml('han', 1, 'sm')}<b>한</b><small>나중에 둬요</small></button>
+    <button class="tile" role="radio" aria-checked="${SET.side === 'random'}" data-side="random"><b>무작위</b><small>운에 맡겨요</small></button>
+  </div></div>
+  <button class="row-sw" role="switch" aria-checked="${SET.limitOn}" id="swLimit"><span>내 제한시간<small>${SET.limitOn ? `한 수당 ${lim}초 (컴퓨터는 제한 없음)` : '꺼져 있어요. 천천히 생각해도 돼요'}</small></span><span class="sw"></span></button>
+  <button class="btn main big" id="btnSolo">${icon('play')}게임 시작</button></div>`;
+  $$('[data-lv]', p).forEach(b => b.onclick = () => { SET.level = +b.dataset.lv; saveSet(); renderSolo(); });
+  $$('[data-side]', p).forEach(b => b.onclick = () => { SET.side = b.dataset.side; saveSet(); renderSolo(); });
+  $('#swLimit', p).onclick = () => { SET.limitOn = !SET.limitOn; saveSet(); renderSolo(); };
+  $('#btnSolo', p).onclick = () => startSolo();
+}
+function renderOnlinePanel() {
+  const p = $('#panelOnline'), bad = FB.state === 'error' && FB.err;
+  const [t, d] = bad ? explain(FB.err) : ['', ''];
+  const keep = $('#nick', p) ? $('#nick', p).value : SET.nick;
+  p.innerHTML = `<h2>친구와 온라인으로</h2><div class="stack">
+  ${bad ? `<div class="errbox" role="alert">${icon('alert')}<div><b>${esc(t)}</b><p>${esc(d)}</p>${FB.err.code === 'file' || FB.err.code === 'noconfig' ? '' : `<button class="btn" id="btnRetry">${icon('refresh')}다시 연결</button>`}</div></div>` : ''}
+  <div><label class="lbl" for="nick">내 이름 (최대 8글자)</label><input id="nick" class="field" maxlength="8" autocomplete="off" value="${esc(keep)}"></div>
+  <button class="btn main big" id="btnQuick" ${FB.state !== 'ok' ? 'aria-disabled="true"' : ''}>${icon('bolt')}빠른 입장</button>
+  <div><span class="lbl">열린 방</span><ul class="rooms" id="rooms"></ul></div>
+  <button class="btn" id="btnCreate" ${FB.state !== 'ok' ? 'aria-disabled="true"' : ''}>${icon('plus')}방 만들기</button>
+  <div class="hr"></div>
+  <div><label class="lbl" for="code">방 코드로 입장</label><div class="split"><input id="code" class="field" maxlength="6" placeholder="ABC123" autocapitalize="characters" autocomplete="off"><button class="btn" id="btnCode">입장</button></div></div></div>`;
+  $('#nick', p).oninput = e => { SET.nick = e.target.value.trim().slice(0, 8) || SET.nick; if (e.target.value.trim()) saveSet(); };
+  $('#nick', p).onblur = e => { if (!e.target.value.trim()) e.target.value = SET.nick; };
+  const rt = $('#btnRetry', p); if (rt) rt.onclick = () => fbInit();
+  $('#btnQuick', p).onclick = () => Online.quick();
+  $('#btnCreate', p).onclick = () => openCreate();
+  const go = () => { const v = $('#code', p).value; Online.join(v); };
+  $('#btnCode', p).onclick = go; $('#code', p).onkeydown = e => { if (e.key === 'Enter') go(); };
+  renderLobby();
+}
+function renderLobby() {
+  const ul = $('#rooms'); if (!ul) return;
+  const list = Online.rooms || [], joinable = list.filter(x => x.joinable && !x.mine).length;
+  const b = $('#roomBadge'); b.textContent = joinable; b.dataset.n = joinable;
+  if (FB.state !== 'ok') { ul.innerHTML = `<li class="empty">${icon('users')}온라인에 연결되면 열린 방이 여기에 보여요.</li>`; return; }
+  if (!list.length) { ul.innerHTML = `<li class="empty">${icon('door')}열린 방이 없어요.<br>빠른 입장이나 방 만들기로 시작해 보세요.</li>`; return; }
+  ul.innerHTML = list.map(x => {
+    const r = x.r, s = r.seats || {}, full = x.seatsN >= 2, playing = r.status === 'playing';
+    const label = x.mine ? '돌아가기' : (x.joinable ? '입장' : '관전');
+    return `<li class="room ${x.mine ? 'mine' : ''}"><div><h3>${r.isPrivate ? icon('lock').replace('class="ic"', 'class="ic" style="display:inline;width:16px;height:16px;vertical-align:-2px"') + ' ' : ''}${esc(r.name || '이름 없는 방')}</h3>
+      <div class="meta"><span class="chip plain">초 ${esc(s.cho ? s.cho.name : '빈 자리')}</span><span class="chip plain">한 ${esc(s.han ? s.han.name : '빈 자리')}</span>
+      <span class="chip ${playing ? 'play' : 'wait'}">${playing ? '진행 중' : (full ? '시작 대기' : '대기 중')}</span><span class="chip plain">${r.limit ? '한 수 ' + r.limit + '초' : '제한 없음'}</span></div></div>
+      <button class="btn ${x.joinable || x.mine ? 'main' : ''}" data-join="${x.code}">${label}</button></li>`;
+  }).join('');
+  $$('[data-join]', ul).forEach(bt => bt.onclick = () => Online.join(bt.dataset.join));
+}
+function openCreate() {
+  if (FB.state !== 'ok') { toast('온라인에 연결되면 방을 만들 수 있어요'); return; }
+  const o = { limit: DEFAULT_ONLINE_LIMIT, allowUndo: true, isPrivate: false };
+  const body = document.createElement('div'); body.className = 'body'; body.style.gap = '20px';
+  const draw = () => {
+    body.innerHTML = `<div><label class="lbl" for="rname">방 이름</label><input id="rname" class="field" maxlength="20" value="${esc(o.name != null ? o.name : SET.nick + '의 방')}"></div>
+    <div><span class="lbl">한 수당 제한시간</span><div class="seg" role="radiogroup">${ONLINE_LIMITS.map(v => `<button role="radio" aria-checked="${o.limit === v}" data-lim="${v}">${v ? v + '초' : '없음'}</button>`).join('')}</div></div>
+    <button class="row-sw" role="switch" aria-checked="${o.allowUndo}" id="swU"><span>무르기 허용<small>상대가 동의해야 무를 수 있어요</small></span><span class="sw"></span></button>
+    <button class="row-sw" role="switch" aria-checked="${o.isPrivate}" id="swP"><span>비공개 방<small>목록에 보이지 않고 코드로만 들어와요</small></span><span class="sw"></span></button>`;
+    $$('[data-lim]', body).forEach(b => b.onclick = () => { o.name = $('#rname', body).value; o.limit = +b.dataset.lim; draw(); });
+    $('#swU', body).onclick = () => { o.name = $('#rname', body).value; o.allowUndo = !o.allowUndo; draw(); };
+    $('#swP', body).onclick = () => { o.name = $('#rname', body).value; o.isPrivate = !o.isPrivate; draw(); };
+  };
+  draw();
+  const m = openModal({ title: '방 만들기', body, actions: [{ label: '닫기' }, { label: '방 만들기', kind: 'main', close: false, onClick: async () => { o.name = $('#rname', body).value; const ok = await Online.create(o); if (ok) m.close(); } }] });
+}
+$$('[data-tab]').forEach(b => b.onclick = () => selectTab(b.dataset.tab));
+function selectTab(t) {
+  $$('[data-tab]').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t ? 'true' : 'false'));
+  $('#panelSolo').hidden = t !== 'solo'; $('#panelOnline').hidden = t !== 'online';
+}
+
+/* ---------- 대국 화면 ---------- */
+function showGame() { $('#app').dataset.screen = 'game'; Online.detachLobby(); renderGame(); fitBoard(); syncBoard(); if (G.status === 'playing') wakeOn(); }
+function goHome() {
+  Solo.token++; wakeOff(); R.clearFx(); G.mode = null; G.thinking = false; clearSel(); $('#flash').hidden = true;
+  $('#app').dataset.screen = 'home'; renderHome(); if (FB.state === 'ok') Online.listenLobby();
+}
+async function leaveGame(silent) {
+  if (G.mode === 'solo') { if (G.status === 'playing' && !silent) { if (!(await confirmBox('나갈까요?', '지금 판은 저장되지 않아요.', '나가기', true))) return; } goHome(); return; }
+  if (G.me && G.status === 'playing' && !silent && !(await confirmBox('나갈까요?', '나가면 기권패로 처리돼요.', '나가기', true))) return;
+  await Online.leave(); goHome();
+}
+function fitBoard() {
+  const st = $('#stage'); const r = st.getBoundingClientRect(); if (r.width < 50 || r.height < 50) return;
+  R.fit(r.width - 4, r.height - 4); syncBoard();
+}
+let fitRaf = 0; const fitSoon = () => { cancelAnimationFrame(fitRaf); fitRaf = requestAnimationFrame(() => { if ($('#app').dataset.screen === 'game') fitBoard(); }); };
+if (window.ResizeObserver) new ResizeObserver(fitSoon).observe($('#stage')); window.addEventListener('resize', fitSoon); window.addEventListener('orientationchange', () => setTimeout(fitSoon, 200));
+if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener && matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { R.rebuild(); });
+
+function capturedBy(side) {                   // side 가 잡은 상대 말
+  const opp = other(side), os = sideNum(opp), b = G.replayAt != null ? boardAt(G.replayAt) : G.an.board, init = J.initBoard(G.su[0], G.su[1]), cnt = {}, cur = {};
+  for (let i = 0; i < 90; i++) { if (init[i] * os > 0) { const t = Math.abs(init[i]); cnt[t] = (cnt[t] || 0) + 1; } if (b[i] * os > 0) { const t = Math.abs(b[i]); cur[t] = (cur[t] || 0) + 1; } }
+  const out = []; for (const t of [2, 3, 4, 5, 6, 7]) for (let k = 0; k < (cnt[t] || 0) - (cur[t] || 0); k++) out.push(t);
+  return out;
+}
+function seatHtml(side, el) {
+  const name = G.names[side], isMe = G.me === side, ts = G.status === 'playing' && turnSide() === side;
+  const caps = capturedBy(side), prevN = el._capN == null ? caps.length : el._capN; el._capN = caps.length;
+  let st;
+  if (G.mode === 'solo') st = isMe ? '내 말' : `컴퓨터 ${J.LEVELS[G.level].name}단계`;
+  else st = !name ? '입장을 기다려요' : (G.present[side] ? '접속 중' : '자리 비움');
+  const off = G.mode === 'online' && (!name || !G.present[side]);
+  el.classList.toggle('turn', ts);
+  return `${octHtml(side, 1, name ? '' : 'empty')}<div class="who"><div class="nm"><span>${esc(name || '빈 자리')}</span>${isMe ? '<em class="me">나</em>' : ''}</div><div class="st ${off ? 'off' : ''}"><i></i>${st}</div></div>
+  <div class="clk"><b class="t" data-clk="${side}">—</b><div class="bar"><i></i></div></div>
+  <div class="cap" aria-label="잡은 말">${caps.map((t, i) => `<span class="oct sm ${other(side)} ${i >= prevN ? '' : 'nopop'}" style="${i >= prevN ? '' : 'animation:none'}"><b>${glyphHtml(other(side), t)}</b></span>`).join('')}</div>`;
+}
+function resultText() {
+  const w = G.winner, me = G.me, r = G.reason; let cls = 'lose', big = '패배';
+  if (w === 'draw') { cls = ''; big = '무승부'; } else if (!me) { cls = ''; big = `${SIDE_NAME[w]} 승리`; } else if (w === me) { cls = 'win'; big = '승리'; }
+  const youWin = w === me, spec = !me;
+  const R_ = {
+    checkmate: spec ? '외통으로 끝났어요' : (youWin ? '외통으로 이겼어요' : '외통을 당했어요'),
+    resign: spec ? '기권으로 끝났어요' : (youWin ? '상대가 기권했어요' : '기권했어요'),
+    time: spec ? '시간이 다 되어 끝났어요' : (youWin ? '상대의 시간이 다 됐어요' : '시간이 다 됐어요'),
+    leave: spec ? '한 쪽이 나가서 끝났어요' : (youWin ? '상대가 나갔어요' : '나갔어요'),
+    count: '점수로 승패가 정해졌어요', bikjang: '빅장에서 쉬어서 점수를 세었어요', agree: '서로 비기기로 했어요'
+  };
+  return { cls, big, sub: R_[r] || '게임이 끝났어요' };
+}
+function renderGame() {
+  if (!G.mode) return;
+  $('#gName').textContent = G.roomName || '대국';
+  const chips = [];
+  if (G.mode === 'online') { chips.push(`<span class="chip plain">방 코드 ${esc(G.code)}</span>`); if (G.isPrivate) chips.push(`<span class="chip plain">${icon('lock')}비공개</span>`); }
+  chips.push(`<span class="chip plain">${icon('clock')}${fmtLimit(G.limit)}</span>`);
+  if (G.mode === 'solo') chips.push(`<span class="chip plain">실력 ${J.LEVELS[G.level].name}</span>`);
+  if (G.mode === 'online' && !G.me) chips.push(`<span class="chip">${icon('eye')}관전 중</span>`);
+  if (G.mode === 'online' && G.spectators) chips.push(`<span class="chip plain">관전 ${G.spectators}명</span>`);
+  $('#gChips').innerHTML = chips.join('');
+  $('#btnInvite').hidden = G.mode !== 'online'; $('#btnLeave').innerHTML = icon('back'); $('#btnInvite').innerHTML = icon('link');
+  const bottom = G.me === 'han' ? 'han' : 'cho', top = other(bottom);
+  const A = $('#seatTop'), B = $('#seatBottom'); const ha = seatHtml(top, A), hb = seatHtml(bottom, B);
+  if (A._h !== ha) { A.innerHTML = ha; A._h = ha; } if (B._h !== hb) { B.innerHTML = hb; B._h = hb; }
+  A.dataset.side = top; B.dataset.side = bottom;
+  renderPill(); renderActs(); renderOverlay(); renderClocks(); Snd.refresh();
+  syncBoard();
+}
+function renderPill() {
+  const el = $('#pill'); let cls = '', html = '';
+  const an = G.an, ts = turnSide(), spec = !G.me;
+  if (G.status === 'waiting') {
+    const s = Online.room && Online.room.seats || {}, both = s.cho && s.han;
+    html = !both ? '상대가 들어오길 기다려요' : (G.host ? '준비됐어요! 게임 시작을 눌러 주세요' : '방장이 시작하길 기다려요');
+  } else if (G.status === 'ended') { const r = resultText(); cls = 'end'; html = `${r.big}${r.sub ? ' - ' + r.sub : ''}`; if (G.replayAt != null) { cls = ''; html = '지난 판을 다시 보는 중이에요'; } }
+  else if (G.replayAt != null) html = '지난 판을 다시 보는 중이에요';
+  else if (G.offer) {
+    const T = { draw: '비기기', count: '점수로 끝내기', undo: '무르기' }[G.offer.type];
+    html = G.offer.from === G.me ? `${T} 제안에 대한 대답을 기다려요` : (spec ? `${T} 제안이 있어요` : `상대가 ${T}를 제안했어요`);
+  } else if (an.bikjang) { cls = 'warn'; html = '빅장이에요. 피하거나, 쉬면 점수로 끝나요'; }
+  else if (an.check) { cls = 'warn'; html = !spec && ts === G.me ? '장군이에요! 피해야 해요' : (spec ? `${SIDE_NAME[ts]}이(가) 장군을 받았어요` : '장군을 불렀어요'); }
+  else if (G.thinking) html = `${icon('hourglass')}컴퓨터가 생각하는 중이에요`;
+  else if (!spec && ts === G.me) { cls = 'mine'; html = J.legalMoves(an.board, an.turn).length ? '내 차례예요' : '둘 수 있는 수가 없어요. 한 수 쉬어 주세요'; }
+  else html = spec ? `${SIDE_NAME[ts]} 차례예요` : (G.mode === 'solo' ? '컴퓨터 차례예요' : '상대 차례예요');
+  el.className = 'pill ' + cls; el.innerHTML = html;
+}
+function renderActs() {
+  const a = $('#acts'), rp = $('#replay'), playing = G.status === 'playing', seated = !!G.me;
+  if (G.replayAt != null) {
+    a.hidden = true; rp.hidden = false; const n = G.tokens.length;
+    rp.innerHTML = `<div class="rc">${G.replayAt}수 / 전체 ${n}수</div><button class="btn" data-r="first" aria-label="처음으로">${icon('first')}</button><button class="btn" data-r="prev" aria-label="이전 수">${icon('prev')}</button><button class="btn" data-r="next" aria-label="다음 수">${icon('next')}</button><button class="btn" data-r="last" aria-label="마지막으로">${icon('last')}</button><button class="btn main" style="grid-column:1/-1" data-r="done">결과 보기</button>`;
+    $$('[data-r]', rp).forEach(b => b.onclick = () => replayGo(b.dataset.r)); return;
+  }
+  rp.hidden = true; a.hidden = false;
+  const myT = myTurn(), canPass = myT && J.canPass(G.an.board, sideNum(G.me));
+  const minMoves = G.me === 'cho' ? 1 : 2, canUndo = playing && seated && G.tokens.length >= minMoves && !G.thinking && !G.offer && (G.mode === 'solo' || G.allowUndo);
+  if (playing && seated) a.innerHTML = `<button class="btn" id="aUndo" ${canUndo ? '' : 'aria-disabled="true"'}>${icon('undo')}무르기</button><button class="btn" id="aPass" ${canPass ? '' : 'aria-disabled="true"'}>${icon('rest')}한 수 쉼</button><button class="btn" id="aMore">${icon('more')}더보기</button>`;
+  else a.innerHTML = `<button class="btn" id="aRules" style="grid-column:1/-1">${icon('book')}규칙 보기</button>`;
+  const q = id => $(id, a); if (q('#aUndo')) q('#aUndo').onclick = () => Act.undo(); if (q('#aPass')) q('#aPass').onclick = () => Act.pass(); if (q('#aMore')) q('#aMore').onclick = openMore; if (q('#aRules')) q('#aRules').onclick = openRules;
+}
+function renderClocks() {
+  const rem = remaining(), ts = G.status === 'playing' ? turnSide() : null;
+  for (const side of ['cho', 'han']) {
+    const t = $(`[data-clk="${side}"]`); if (!t) continue; const seat = t.closest('.seat'), bar = $('.bar i', seat), turn = ts === side;
+    const hasClock = G.status === 'playing' && G.limit && !(G.mode === 'solo' && side !== G.me);
+    t.textContent = hasClock ? fmtT(turn ? rem : G.limit) : '—';
+    seat.classList.toggle('dim', !turn || !hasClock); seat.classList.toggle('low', !!(hasClock && turn && rem <= 10));
+    bar.style.setProperty('--p', hasClock && turn ? clamp(rem / G.limit, 0, 1) : (hasClock ? 1 : 0));
+  }
+}
+function replayGo(w) {
+  const n = G.tokens.length; let i = G.replayAt;
+  if (w === 'first') i = 0; else if (w === 'prev') i = Math.max(0, i - 1); else if (w === 'next') i = Math.min(n, i + 1); else if (w === 'last') i = n;
+  else if (w === 'done') { G.replayAt = null; R.set({ last: null }); renderGame(); return; }
+  G.replayAt = i; R.clearFx(); const a = i > 0 ? i - 1 : -1; if (a >= 0 && w === 'next') { const t = G.tokens[a]; if (t !== J.PASS) { const bb = boardAt(a); R.animate(t >> 7, t & 127, bb[t >> 7], bb[t & 127]); } } renderGame();
+}
+function startReplay() { G.replayAt = G.tokens.length; R.clearFx(); renderGame(); }
+
+/* ---------- 판 위 카드(대기·결과·제안) ---------- */
+function renderOverlay() {
+  const o = $('#ovl'); let html = '', dock = false; const me = G.me;
+  if (G.replayAt != null) { o.hidden = true; return; }
+  if (G.status === 'waiting' && G.mode === 'online') {
+    const s = (Online.room && Online.room.seats) || {}, both = !!(s.cho && s.han), mySu = me ? G.seatSu[me === 'cho' ? 0 : 1] : 0;
+    html = `<div class="card"><h3>${both ? '시작할 준비가 됐어요' : '친구를 기다려요'}</h3>
+      <div class="code" aria-label="방 코드"><b>${esc(G.code)}</b><button class="icbtn" id="oCopy" aria-label="방 코드와 초대 링크 복사">${icon('copy')}</button></div>
+      ${me ? '' : '<p>자리가 모두 차서 관전 중이에요. 곧 시작해요.</p>'}
+      ${G.host ? `<div class="btns"><button class="btn main big" id="oStart" ${both ? '' : 'aria-disabled="true"'}>${icon('play')}게임 시작</button></div>` : `<p>${both ? '방장이 시작하면 바로 시작돼요.' : '친구가 들어오면 방장이 시작해요.'}</p>`}</div>`;
+  } else if (G.status === 'playing' && G.offer) {
+    const T = { draw: '비기자고', count: '점수로 끝내자고', undo: '무르기를' }[G.offer.type], mine = G.offer.from === me;
+    dock = true; const sc = G.offer.type === 'count' ? `<p>${fmtScore(scoreNow())}</p>` : '';
+    html = me ? (mine ? `<div class="card"><h3>제안을 보냈어요</h3><p>상대가 대답하길 기다려요.</p><div class="btns"><button class="btn" id="oCancel">제안 취소</button></div></div>`
+      : `<div class="card"><h3>상대가 ${T} 제안했어요</h3>${sc}<div class="btns two"><button class="btn" id="oNo">거절</button><button class="btn main" id="oYes">동의</button></div></div>`) : '';
+    if (!html) { o.hidden = true; return; }
+  } else if (G.status === 'ended') {
+    if (G.resultAt && Date.now() < G.resultAt) { o.hidden = true; return; }
+    const r = resultText(), seatedBoth = G.mode === 'online' && Online.room && Online.room.seats && Online.room.seats.cho && Online.room.seats.han;
+    const sc = G.score || (G.reason === 'count' || G.reason === 'bikjang' ? scoreNow() : null);
+    let again = '';
+    if (me) {
+      if (G.mode === 'solo') again = `<button class="btn main big" id="oAgain">다시 하기</button>`;
+      else if (!seatedBoth) again = `<button class="btn big" aria-disabled="true">상대가 나갔어요</button>`;
+      else if (G.rematch[me]) again = `<button class="btn big" aria-disabled="true">상대를 기다리는 중이에요</button>`;
+      else again = `<button class="btn main big" id="oAgain">${G.rematch[other(me)] ? '다시 하기 (상대가 기다려요)' : '다시 하기'}</button>`;
+    }
+    html = `<div class="card res ${r.cls}"><div class="big-t">${r.big}</div><div class="sub">${r.sub}</div>${sc ? `<div class="sc"><span>초 ${sc.cho}점</span><span>한 ${sc.han}점</span></div>` : ''}      <div class="btns">${again}<div class="btns two"><button class="btn" id="oView">판 보기</button><button class="btn" id="oLeave">나가기</button></div></div></div>`;
+    if (G.mode === 'online' && me && G.status === 'ended' && G.rematch[me] && !(G.rematch[other(me)])) { /* 대기 중 */ }
+  } else { o.hidden = true; return; }
+  o.className = 'ovl' + (dock ? ' dock' : ''); o.innerHTML = html; o.hidden = false;
+  const q = id => $(id, o);
+  if (q('#oCopy')) q('#oCopy').onclick = copyInvite; if (q('#oStart')) q('#oStart').onclick = () => Online.start();
+  if (q('#oCancel')) q('#oCancel').onclick = () => Online.cancelOffer(); if (q('#oYes')) q('#oYes').onclick = () => Online.respond(true); if (q('#oNo')) q('#oNo').onclick = () => Online.respond(false);
+  if (q('#oAgain')) q('#oAgain').onclick = () => Act.rematch(); if (q('#oView')) q('#oView').onclick = startReplay; if (q('#oLeave')) q('#oLeave').onclick = () => leaveGame(true);
+}
+async function copyInvite() {
+  const url = location.origin + location.pathname + '?room=' + G.code; const text = url;
+  try { await navigator.clipboard.writeText(text); toast('초대 링크를 복사했어요. 친구에게 붙여 넣어 보내 주세요'); }
+  catch (e) { try { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast('초대 링크를 복사했어요'); } catch (e2) { openModal({ title: '초대 링크', body: `<p style="word-break:break-all">${esc(text)}</p>`, actions: [{ label: '닫기', kind: 'main' }] }); } }
+}
+$('#btnInvite').onclick = copyInvite; $('#btnLeave').onclick = () => leaveGame(); $$('[data-sound]').forEach(b => b.onclick = () => Snd.set(!SET.sound));
+
+/* ---------- 더보기 / 규칙 ---------- */
+function openMore() {
+  const playing = G.status === 'playing' && G.me, cant = !playing || !!G.offer || G.thinking;
+  const m = openModal({ title: '더보기', body: `<div class="menu">
+    <button class="btn" data-m="count" ${cant ? 'aria-disabled="true"' : ''}>${icon('calc')}점수로 끝내기 제안</button>
+    <button class="btn" data-m="draw" ${cant ? 'aria-disabled="true"' : ''}>${icon('handshake')}비기자고 하기</button>
+    <button class="btn" data-m="rules">${icon('book')}규칙 보기</button>
+    <div style="height:16px"></div>
+    <button class="btn danger" data-m="resign" ${playing ? '' : 'aria-disabled="true"'}>${icon('flag')}기권하기</button></div>`, actions: [{ label: '닫기' }] });
+  $$('[data-m]', m.el).forEach(b => b.onclick = () => { const k = b.dataset.m; m.close(); setTimeout(() => { if (k === 'count') Act.offerCount(); else if (k === 'draw') Act.offerDraw(); else if (k === 'rules') openRules(); else if (k === 'resign') Act.resign(); }, 60); });
+}
+function openRules() {
+  openModal({ title: '장기 규칙', body: `<ul class="rules">
+  <li><b>목표</b>: 상대 궁에 장군을 불러서 피할 수 없게 만들면(외통) 이겨요. 초가 먼저 둬요.</li>
+  <li><b>궁(楚·漢)·사(士)</b>: 궁성(X 표시 3×3) 안에서 선을 따라 한 칸씩 가요.</li>
+  <li><b>차(車)</b>: 가로세로로 막힐 때까지 가요. 궁성에서는 대각선으로도 가요.</li>
+  <li><b>포(包)</b>: 말 하나를 뛰어넘어야 움직여요. 포는 포를 넘거나 잡을 수 없어요.</li>
+  <li><b>마(馬)</b>: 한 칸 간 뒤 대각선으로 한 칸. 첫 칸에 말이 있으면 막혀요.</li>
+  <li><b>상(象)</b>: 한 칸 간 뒤 대각선으로 두 칸. 지나는 자리에 말이 있으면 막혀요.</li>
+  <li><b>졸(卒)·병(兵)</b>: 앞이나 옆으로 한 칸. 뒤로는 못 가요. 상대 궁성에서는 대각선 앞으로도 가요.</li>
+  <li><b>한 수 쉼</b>: 장군을 받은 때만 빼고 쉴 수 있어요.</li>
+  <li><b>빅장</b>: 두 궁이 같은 줄에서 마주 보면 빅장이에요. 다음 사람이 피하거나, 쉬면 점수로 승패를 정해요.</li>
+  <li><b>점수</b>: 차 13, 포 7, 마 5, 상 3, 사 3, 졸 2. 먼저 두는 초에게 불리하니 한이 1.5점을 더 받아요.</li>
+  <li><b>끝내기</b>: 외통, 시간 초과, 기권, 서로 합의(점수로 끝내기·비기기)로 끝나요.</li></ul>`, actions: [{ label: '닫기', kind: 'main' }] });
+}
+
+/* ===== 시작 (모든 선언이 끝난 뒤에 실행해요) ===== */
+(function boot() {
+  Snd.refresh(); renderHome();
+  try {
+    const f = () => R.rebuild();
+    if (document.fonts && document.fonts.load) {
+      document.fonts.load('400 40px "JGCho"', '楚車包馬象士卒').then(f).catch(() => {});
+      document.fonts.load('700 40px "JGHan"', '漢車包馬象士兵').then(f).catch(() => {});
+      document.fonts.ready.then(f).catch(() => {});
+    }
+  } catch (e) {}
+  const waitOnline = ms => new Promise(res => { const t0 = Date.now(); (function chk() { if (FB.state === 'ok' || FB.state === 'error' || Date.now() - t0 > ms) return res(); setTimeout(chk, 150); })(); });
+  (async () => {
+    await fbInit(); await waitOnline(10000);
+    const rm = new URLSearchParams(location.search).get('room');
+    if (rm) { selectTab('online'); try { history.replaceState(null, '', location.pathname); } catch (e) {} if (FB.state === 'ok') Online.join(rm); return; }
+    if (SET.lastRoom && FB.state === 'ok') {
+      try {
+        const snap = await FB.api.get(roomRef(SET.lastRoom)), r = snap.exists() ? snap.val() : null;
+        if (r && seatOf(r, FB.uid)) { selectTab('online'); Online.join(SET.lastRoom, true); } else { SET.lastRoom = ''; saveSet(); }
+      } catch (e) {}
+    }
+  })();
+  window.__jg = { G, R, Online, FB, SET, J, Act, Solo, renderGame, startSolo };
+})();
+
+</script>
+</body>
+</html>
